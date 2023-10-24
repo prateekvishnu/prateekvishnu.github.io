@@ -3198,7 +3198,7 @@ tbody.collapse.show {
 }
 
 .nav-tabs .nav-item {
-    margin-bottom: -1px
+    margin-bottom: -1px;
 }
 
 .nav-tabs .nav-link {
@@ -3243,7 +3243,7 @@ tbody.collapse.show {
 
 .nav-fill .nav-item {
     flex: 1 1 auto;
-    text-align: center
+    text-align: center;
 }
 
 .nav-justified .nav-item {
