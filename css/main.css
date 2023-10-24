@@ -5093,6 +5093,7 @@ Created using IcoMoon - icomoon.io
 .profile-page .button-container {
   text-align: center;
   margin-top: -106px;
+
 }
 
 .profile-page .collections img {
@@ -7465,6 +7466,8 @@ Created using IcoMoon - icomoon.io
 /* Profile Page Social button Style */
 .button-container .btn-default {
   margin-right: 8px;
+  background-color: #378C3F;
+
 }
 
 /* Professional Skills Style */
@@ -7599,4 +7602,8 @@ a.credit {
 /* Common Style */
 .section {
   padding-bottom: 0;
+}
+
+.icon-green {
+  background-color: #378C3F;
 }
