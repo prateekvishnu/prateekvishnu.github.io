@@ -7604,6 +7604,6 @@ a.credit {
   padding-bottom: 0;
 }
 
-.icon-green {
-  background-color: #378C3F;
+.custom-ul {
+  padding: 10px; /* Adjust the padding value to your preference */
 }
