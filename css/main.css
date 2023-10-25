@@ -7610,64 +7610,10 @@ a.credit {
 
 
 /* Photo Slider */
-.photo-slider {
-  position: relative;
-  display: flex;
-  align-items: center;
-  text-align: center;
+.carousel-inner img {
+  height: 720px; 
 }
 
-.photo-gallery {
-  display: flex;
-  justify-content: flex-start; /* Align images to the left */
-}
-
-.images {
-  display: none;
-  width: 400px;
-  height: 300px;
-}
-
-.arrow {
-  font-size: 24px;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  user-select: none;
-  opacity: 0.3; /* Arrows are initially transparent */
-  transition: opacity 0.3s; /* Add a smooth transition effect */
-}
-
-.left-arrow {
-  left: 10px; /* Move the left arrow to the left side of the images */
-}
-
-.right-arrow {
-  right: 10px; /* Move the right arrow to the right side of the images */
-}
-
-.dots {
-  display: flex;
-  justify-content: center; /* Center the dots horizontally */
-  margin-top: 10px;
-}
-
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #888;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.dot.active {
+.carousel-indicators .active {
   background-color: #378C3F;
 }
-
-
-
-
