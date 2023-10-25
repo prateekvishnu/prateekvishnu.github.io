@@ -41,3 +41,49 @@ $('a.smooth-scroll')
     }
   }
 });
+
+var x = 0;
+var images = document.querySelectorAll(".images");
+var dots = document.querySelectorAll(".dot");
+
+function showImage(index) {
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+        dots[i].classList.remove("active");
+    }
+    images[index].style.display = "block";
+    dots[index].classList.add("active");
+}
+
+function navigate(direction) {
+    x += direction;
+    if (x >= images.length) {
+        x = 0;
+    } else if (x < 0) {
+        x = images.length - 1;
+    }
+    showImage(x);
+}
+
+document.getElementById("prev").addEventListener("click", function() {
+    navigate(-1);
+});
+
+document.getElementById("next").addEventListener("click", function() {
+    navigate(1);
+});
+
+for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener("click", function() {
+        showImage(i);
+        x = i;
+    });
+}
+
+showImage(x);
+setInterval(function () {
+    navigate(1);
+}, 2000);
+
+
+
