@@ -7617,3 +7617,71 @@ a.credit {
 .carousel-indicators .active {
   background-color: #378C3F;
 }
+
+
+
+/* Dark mode toggle container */
+.dark-mode-toggle {
+  display: inline-block;
+  position: relative;
+}
+
+/* Hidden checkbox input */
+.dark-mode-toggle input[type="checkbox"] {
+  display: none;
+}
+
+/* Toggle label for the switch */
+.dark-mode-toggle .toggle-label {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #333; /* Change the background color as needed */
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Slider that moves to indicate dark or light mode */
+.dark-mode-toggle .slider {
+  width: 30px;
+  height: 30px;
+  background-color: #fff; /* Change the background color as needed */
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+
+/* Icon container */
+.dark-mode-toggle .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  font-size: 18px;
+  display: flex;
+}
+
+/* Moon icon */
+.dark-mode-toggle .icons .fa-moon {
+  color: #fff; /* Change the color as needed */
+}
+
+/* Sun icon */
+.dark-mode-toggle .icons .fa-sun {
+  color: #f39c12; /* Change the color as needed */
+}
+
+/* Adjust styles for dark mode */
+.dark-mode-toggle input[type="checkbox"]:checked + .toggle-label {
+  background-color: #f39c12; /* Change the background color as needed */
+}
+
+.dark-mode-toggle input[type="checkbox"]:checked + .toggle-label .slider {
+  transform: translateX(30px);
+  background-color: #333; /* Change the background color as needed */
+}

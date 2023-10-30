@@ -1,8 +1,8 @@
 // Add your javascript here
 // Don't forget to add it into respective layouts where this js file is needed
 
-$(document).ready(function() {
-  AOS.init( {
+$(document).ready(function () {
+  AOS.init({
     // uncomment below for on-scroll animations to played only once
     // once: true  
   }); // initialize animate on scroll library
@@ -10,37 +10,57 @@ $(document).ready(function() {
 
 // Smooth scroll for links with hashes
 $('a.smooth-scroll')
-.click(function(event) {
-  // On-page links
-  if (
-    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-    && 
-    location.hostname == this.hostname
-  ) {
-    // Figure out element to scroll to
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    // Does a scroll target exist?
-    if (target.length) {
-      // Only prevent default if animation is actually gonna happen
-      event.preventDefault();
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 1000, function() {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
-          return false;
-        } else {
-          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-          $target.focus(); // Set focus again
-        };
-      });
+  .click(function (event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function () {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
     }
-  }
-});
+  });
+
+const darkModeToggle = document.getElementById('dark-mode-toggle-checkbox');
+const body = document.body;
+
+// Check the user's preference from local storage
+const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+// Function to enable or disable dark mode
+function toggleDarkMode() {
+  body.classList.toggle('dark-mode', darkModeToggle.checked);
+  // Store the user's preference in local storage
+  localStorage.setItem('darkMode', darkModeToggle.checked);
+}
+
+// Initialize the toggle based on the user's preference
+darkModeToggle.checked = isDarkMode;
+toggleDarkMode();
+
+// Listen for the switch's change event
+darkModeToggle.addEventListener('change', toggleDarkMode);
 
 
 
