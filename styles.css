@@ -168,10 +168,12 @@ h2 em, h1 em { font-style: normal; color: var(--muted); }
 .accordion-list details:nth-child(2) summary span, .rubric > div:nth-child(2) > span { background: var(--sky); }
 .accordion-list details:nth-child(3) summary span, .rubric > div:nth-child(3) > span { background: var(--accent); }
 .accordion-list details:nth-child(4) summary span, .rubric > div:nth-child(4) > span { background: var(--violet); color: #fff; }
+.rubric > div:nth-child(5) > span { background: var(--coral); color: #fff; }
+.rubric > div:nth-child(6) > span { background: #d8dde3; color: #111; }
 .accordion-list details p { color: var(--muted); line-height: 1.6; margin: 18px 25px 0 54px; }
 
 /* education */
-.education-block, .talks-block, .awards-block { margin-top: 96px; padding-top: 34px; border-top: 1px solid var(--line); }
+.education-block, .talks-block, .awards-block, .earlier-block { margin-top: 96px; padding-top: 34px; border-top: 1px solid var(--line); }
 .education-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
 .education-label { display: inline-flex; border-radius: 99px; background: var(--ink); color: var(--paper); padding: 8px 15px; font: 500 11px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .06em; }
 .education-heading h3 { margin: 0; font-size: 30px; letter-spacing: -.055em; }
@@ -189,7 +191,8 @@ h2 em, h1 em { font-style: normal; color: var(--muted); }
 .education-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.45; }
 
 /* toolkit */
-.toolkit { margin-top: 64px; border-top: 1px solid var(--line); }
+.toolkit { margin-top: 96px; padding-top: 34px; border-top: 1px solid var(--line); }
+.toolkit .education-heading { margin-bottom: 8px; }
 .toolkit-row { display: grid; grid-template-columns: 140px 1fr; gap: 24px; align-items: start; padding: 20px 0; border-bottom: 1px solid var(--line); }
 .toolkit-row > span { font: 500 11px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); padding-top: 8px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -257,6 +260,23 @@ h2 em, h1 em { font-style: normal; color: var(--muted); }
 .mini-card h4 { font-size: 20px; letter-spacing: -.05em; margin: 12px 0 8px; }
 .mini-card p { margin: 0; color: #a9adb0; font-size: 13px; line-height: 1.55; }
 
+/* more projects list (inside dark projects section) */
+.project-more { margin-top: 56px; padding-top: 34px; border-top: 1px solid #2e3336; }
+.project-more .education-label { background: #d8dde3; color: #111; }
+.project-more .education-heading h3 { color: #fff; }
+.project-more-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+.project-more-list li { display: grid; grid-template-columns: 96px 1fr; gap: 18px; padding: 18px 0; border-bottom: 1px solid #2e3336; }
+.project-more-list li > span { font: 500 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--accent); padding-top: 4px; }
+.project-more-list strong { display: block; font-size: 17px; letter-spacing: -.03em; color: #fff; }
+.project-more-list p { margin: 4px 0 0; color: #a9adb0; font-size: 13px; line-height: 1.55; }
+
+/* earlier research */
+.earlier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.earlier-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+.earlier-card > span { font: 500 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.earlier-card h4 { font-size: 21px; letter-spacing: -.045em; line-height: 1.15; margin: 12px 0 10px; }
+.earlier-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+
 /* ---------- research ---------- */
 .research-grid { align-items: start; }
 .grant-list { border-top: 1px solid var(--line); margin: 36px 0 36px; }
@@ -286,9 +306,10 @@ a.pub:hover { transform: translateX(4px); border-color: var(--coral); }
 
 /* ---------- service ---------- */
 .service-section { background: var(--soft-2); }
-.judging-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; align-items: center; }
+.judging-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 90px; align-items: start; }
+.judging-grid > div:first-child { position: sticky; top: 96px; }
 .rubric { border-top: 1px solid var(--line); }
-.rubric > div { display: flex; align-items: flex-start; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.rubric > div { display: flex; align-items: flex-start; gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--line); }
 .rubric strong { font-size: 20px; letter-spacing: -.04em; display: block; }
 .rubric p { margin: 6px 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
 
@@ -325,6 +346,8 @@ a.pub:hover { transform: translateX(4px); border-color: var(--coral); }
 /* ---------- responsive ---------- */
 @media (max-width: 1000px) {
   .project-grid { grid-template-columns: 1fr 1fr; }
+  .project-more-list { grid-template-columns: 1fr; }
+  .judging-grid > div:first-child { position: static; }
   .talks-grid, .awards-grid { grid-template-columns: 1fr 1fr; gap: 25px; }
   .talks-grid > div, .awards-grid > div, .talks-grid > div:not(:first-child), .awards-grid > div:not(:first-child) { border: 0; padding: 0; }
 }
@@ -351,7 +374,10 @@ a.pub:hover { transform: translateX(4px); border-color: var(--coral); }
   .section { padding: 90px 0; }
   .two-column, .judging-grid, .contact-grid { grid-template-columns: 1fr; gap: 55px; }
   .about-section h2, .research-section h2, .service-section h2, .contact-section h2, .center-heading { font-size: clamp(46px, 13vw, 78px); }
-  .education-block, .talks-block, .awards-block { margin-top: 70px; }
+  .education-block, .talks-block, .awards-block, .earlier-block { margin-top: 70px; }
+  .project-more-list li { grid-template-columns: 1fr; gap: 6px; }
+  .earlier-grid { grid-template-columns: 1fr; }
+  .rubric > div { align-items: flex-start; }
   .education-heading { align-items: flex-start; flex-direction: column; }
   .education-cards { grid-template-columns: 1fr; }
   .education-card { grid-template-columns: 68px 1fr; padding: 22px; }
