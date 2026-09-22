@@ -168,7 +168,7 @@ h2 em, h1 em { font-style: normal; color: var(--muted); }
 .accordion-list details:nth-child(2) summary span, .rubric > div:nth-child(2) > span { background: var(--sky); }
 .accordion-list details:nth-child(3) summary span, .rubric > div:nth-child(3) > span { background: var(--accent); }
 .accordion-list details:nth-child(4) summary span, .rubric > div:nth-child(4) > span { background: var(--violet); color: #fff; }
-.rubric > div:nth-child(5) > span { background: var(--coral); color: #fff; }
+.accordion-list details:nth-child(5) summary span, .rubric > div:nth-child(5) > span { background: var(--coral); color: #fff; }
 .rubric > div:nth-child(6) > span { background: #d8dde3; color: #111; }
 .accordion-list details p { color: var(--muted); line-height: 1.6; margin: 18px 25px 0 54px; }
 
