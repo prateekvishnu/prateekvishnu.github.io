@@ -152,6 +152,8 @@ h2 em, h1 em { font-style: normal; color: var(--muted); }
 }
 .about-signoff { margin-top: 48px; color: var(--muted); font: 500 11px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .08em; }
 
+.about-section .two-column > div:first-child h2 { font-size: clamp(38px, 4.1vw, 60px); letter-spacing: -.08em; line-height: .98; }
+
 /* accordion */
 .accordion-list { border-top: 1px solid var(--line); }
 .accordion-list details { border-bottom: 1px solid var(--line); padding: 22px 0; }
