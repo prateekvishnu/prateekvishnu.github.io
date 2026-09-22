@@ -46,3 +46,27 @@ document.querySelectorAll('.accordion-list details').forEach((d) => {
     if (d.open) document.querySelectorAll('.accordion-list details').forEach((o) => { if (o !== d) o.open = false; });
   });
 });
+
+// Side nav: highlight the section whose top is above the viewport midpoint; invert colors over dark sections.
+const sideNav = document.querySelector('.side-nav');
+if (sideNav) {
+  const links = [...sideNav.querySelectorAll('a')];
+  const hero = document.querySelector('.hero');
+  const items = links.map((a) => ({ a, id: a.dataset.section, el: a.dataset.section === 'top' ? hero : document.getElementById(a.dataset.section) })).filter((x) => x.el);
+  const darkIds = new Set(['projects', 'contact']);
+  let current = null;
+  const update = () => {
+    const mid = window.scrollY + window.innerHeight * 0.45;
+    const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+    let active = items[0];
+    for (const it of items) if (it.el.getBoundingClientRect().top + window.scrollY <= mid) active = it;
+    if (atBottom) active = items[items.length - 1];
+    if (active.id === current) return;
+    current = active.id;
+    links.forEach((l) => l.classList.toggle('active', l === active.a));
+    sideNav.classList.toggle('on-dark', darkIds.has(active.id));
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+}
