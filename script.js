@@ -72,6 +72,15 @@ if (sideNav) {
 }
 
 // Projects: staggered reveal for every .reveal card as it scrolls into view.
+// Tag the rest of the page's cards and rows for the same staggered reveal.
+[
+  '.stat-strip > div', '.accordion-list details', '.education-card', '.toolkit-row',
+  '.career-row', '.pub', '.grant-list > div', '.earlier-card',
+  '.talks-grid > div', '.awards-grid > div', '.rubric > div',
+].forEach((sel) => document.querySelectorAll(sel).forEach((el, i) => {
+  el.classList.add('reveal');
+  if (!el.style.getPropertyValue('--i')) el.style.setProperty('--i', String((i % 8) + 1));
+}));
 const moreCards = document.querySelectorAll('.reveal');
 if (moreCards.length) {
   if ('IntersectionObserver' in window) {
