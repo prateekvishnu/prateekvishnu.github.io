@@ -342,6 +342,13 @@ a.pub:hover { transform: translateX(4px); border-color: var(--coral); }
 .talks-grid p, .awards-grid p { color: var(--muted); font-size: 13px; margin: 8px 0 0; line-height: 1.5; }
 .awards-grid { margin-top: 0; }
 
+/* award list inside awards grid */
+.award-list { list-style: none; margin: 10px 0 0; padding: 0; }
+.award-list li { display: grid; grid-template-columns: 44px 1fr auto; gap: 10px; align-items: baseline; padding: 6px 0; border-top: 1px dashed var(--line); color: var(--muted); font-size: 13px; line-height: 1.4; }
+.award-list li:first-child { border-top: 0; }
+.award-list b { font: 500 10px 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .06em; color: var(--ink); background: var(--soft); border-radius: 99px; padding: 3px 7px; text-align: center; }
+.award-list i { font: 500 10px 'DM Mono', monospace; font-style: normal; color: var(--muted); }
+
 /* ---------- service ---------- */
 .service-section { background: var(--soft-2); }
 .judging-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 90px; align-items: start; }
