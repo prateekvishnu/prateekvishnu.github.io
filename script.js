@@ -70,3 +70,16 @@ if (sideNav) {
   window.addEventListener('resize', update);
   update();
 }
+
+// More projects: staggered reveal when the grid scrolls into view.
+const moreCards = document.querySelectorAll('.more-card');
+if (moreCards.length) {
+  if ('IntersectionObserver' in window) {
+    const reveal = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); reveal.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+    moreCards.forEach((card) => reveal.observe(card));
+  } else {
+    moreCards.forEach((card) => card.classList.add('in'));
+  }
+}
