@@ -1,1981 +1,442 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meet Vishnu</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
-  <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
-  <link href="css/main.css?ver=1.1.0" rel="stylesheet">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
-
-  <!-- Structured data for Google Knowledge Panel -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Vishnu Kakarapathi",
-  "alternateName": "Vishnu Prateek Kakaraparthi",
-  "jobTitle": "Doctoral Researcher",
-  "image": "https://lh4.googleusercontent.com/-g7nxC3TFufI/AAAAAAAAAAI/AAAAAAAAAAA/DrTDgLHU1Hs/s192-c-mo/photo.jpg",  // Replace with correct URL
-  "url": "https://prateekvishnu.github.io/",  // Replace with your personal website domain
-  "affiliation": {
-    "@type": "Organization",
-    "name": "Arizona State University",
-    "url": "https://www.asu.edu"
-  },
-  "alumniOf": [
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Vishnu Kakaraparthi is a founding AI engineer and Ph.D. researcher building production LLM systems, agentic platforms, and wearable AI for health." />
+    <meta property="og:title" content="Vishnu Kakaraparthi — Applied AI, wearables, and research" />
+    <meta property="og:description" content="Founding AI engineer at DealPrint. Ph.D. researcher at Arizona State University working on wrist-centric AI for medication adherence and activity recognition." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prateekvishnu.github.io/" />
+    <meta property="og:image" content="https://prateekvishnu.github.io/assets/headshot.png" />
+    <title>Vishnu Kakaraparthi — Applied AI, wearables, and research</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          var pref = localStorage.getItem('vk-theme') || 'system';
+          var dark = pref === 'dark' || (pref === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+          document.documentElement.dataset.themePref = pref;
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
     {
-      "@type": "EducationalOrganization",
-      "name": "Quantic School of Business and Technology",
-      "url": "https://quantic.edu"
-    },
-    {
-      "@type": "EducationalOrganization",
-      "name": "SRM University",
-      "url": "https://www.srmist.edu.in/"
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vishnu Kakaraparthi",
+      "alternateName": "Vishnu Prateek Kakaraparthi",
+      "jobTitle": "Founding AI and Software Engineer",
+      "worksFor": { "@type": "Organization", "name": "DealPrint" },
+      "image": "https://prateekvishnu.github.io/assets/headshot.png",
+      "url": "https://prateekvishnu.github.io/",
+      "affiliation": { "@type": "Organization", "name": "Arizona State University", "url": "https://www.asu.edu" },
+      "alumniOf": [
+        { "@type": "EducationalOrganization", "name": "Arizona State University", "url": "https://www.asu.edu" },
+        { "@type": "EducationalOrganization", "name": "Quantic School of Business and Technology", "url": "https://quantic.edu" },
+        { "@type": "EducationalOrganization", "name": "SRM University", "url": "https://www.srmist.edu.in/" }
+      ],
+      "email": "mailto:vkakarap@asu.edu",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=WQIuH_YAAAAJ&hl=en",
+        "https://www.linkedin.com/in/prateekvishnu/",
+        "https://github.com/prateekvishnu"
+      ],
+      "description": "Founding AI engineer and Ph.D. researcher in Computer Science at Arizona State University, specializing in applied LLM systems, wearable AI, human-computer interaction, and computer vision."
     }
-  ],
-  "email": "mailto:vkakarap@asu.edu",
-  "sameAs": [
-    "https://scholar.google.com/citations?user=WQIuH_YAAAAJ&hl=en",
-    "https://orcid.org/0000-000X-XXXX-XXXX",
-    "https://www.linkedin.com/in/prateekvishnu/",
-    "https://www.researchgate.net/profile/Vishnu-Kakarapathi",
-    "https://github.com/prateekvishnu"
-  ],
-  "description": "Ph.D. Candidate in Computer Science at Arizona State University, specializing in wearable AI, human-computer interaction, and computer vision. Contributor to multiple grants, publications, and patents in the field of smart health and sports technologies."
-}
-</script>
-
-</head>
-
-<body id="top">
-  <header>
-    <div class="profile-page sidebar-collapse">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
-        <div class="container">
-          <div class="navbar-translate">
-            <a class="nav-link smooth-scroll" href="#" title="Home">
-              <i class="fa fa-home fa-2x"></i>
-            </a>
-
-            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-              aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-bar bar1"></span>
-              <span class="navbar-toggler-bar bar2"></span>
-              <span class="navbar-toggler-bar bar3"></span>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#research">Research</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#work">Work</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skills">Skills</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#publications">Publications</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#awards-and-honors">Awards</a></li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMore" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">Projects</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
-                  <a class="dropdown-item smooth-scroll" href="#academic-projects">Academic Projects</a>
-                  <a class="dropdown-item smooth-scroll" href="#hackathon-projects">Hackathon Projects</a>
-                </div>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMore" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">More</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMore">
-                  <a class="dropdown-item smooth-scroll" href="#open-source-contributions">Open Source Contributions</a>
-                  <a class="dropdown-item smooth-scroll" href="#professional-services">Professional Services</a>
-                  <a class="dropdown-item smooth-scroll" href="#teaching-experience">Teaching Experience</a>
-                  <a class="dropdown-item smooth-scroll" href="#administrative-experience">Administrative Experience</a>
-                  <a class="dropdown-item smooth-scroll" href="#invited-talks">Invited Talks</a>
-                  <a class="dropdown-item smooth-scroll" href="#photos">Photos</a>
-                </div>
-              </li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+    </script>
+  </head>
+  <body>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#top" aria-label="Vishnu Kakaraparthi home">VK<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About <span>↓</span></a>
+        <a href="#experience">Experience <span>↓</span></a>
+        <a href="#projects">Projects <span>↓</span></a>
+        <a href="#research">Research <span>↓</span></a>
+        <a href="#service">Service <span>↓</span></a>
+        <a href="#contact">Contact <span>↓</span></a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Theme: system" title="Theme: system (click to cycle)">◐</button>
       </nav>
-    </div>
-  </header>
+    </header>
 
-
-  <div class="page-content">
-    <div>
-      <div class="profile-page">
-        <div class="wrapper">
-          <div class="page-header page-header-small" filter-color="green">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg')">
-            </div>
-            <div class="container">
-              <div class="content-center">
-                <div class="cc-profile-image"><a href="#"><img src="images/vishnu.gif" alt="Image"
-                      style="width: 250px; height: auto;" /></a></div>
-                <div class="h2 title">Vishnu Kakaraparthi</div>
-                <p class="category text-white">Data Scientist, AI/ML Researcher, Inventor</p>
-                <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-                  data-aos-anchor="data-aos-anchor">Hire Me</a>
-                <a class="btn btn-primary" href="Vishnu CV.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"
-                  download>Download CV</a>
-
-              </div>
-            </div>
-            <div class="section">
-              <div class="container">
-                <div class="button-container">
-                  <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/prateekvishnu"
-                    rel="tooltip" title="Checkout my GitHub"><i class="fa fa-github"></i></a>
-                  <a class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://scholar.google.com/citations?user=WQIuH_YAAAAJ&hl=en" rel="tooltip"
-                    title="See my publications on Google Scholar"><i class="fa fa-graduation-cap"></i></a>
-                  <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/prateekvishnu/"
-                    rel="tooltip" title="Add me on LinkedIn"><i class="fa fa-linkedin"></i></a>
-                  <a class="btn btn-default btn-round btn-lg btn-icon"
-                    href="https://www.instagram.com/sky.is.the.lower.limit/" rel="tooltip"
-                    title="Follow me on Instagram"><i class="fa fa-instagram"></i></a>
-                </div>
-
-              </div>
-            </div>
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <span class="eyebrow">Founding AI engineer · Ph.D. researcher · Tempe, AZ</span>
+          <h1>AI systems that<br /><em>work in the real world.</em></h1>
+          <p>I build production LLM systems, agentic platforms, and wearable AI for health, from a 464-class M&amp;A due-diligence classifier to a wrist-worn camera that tracks medication adherence for older adults.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experience">Explore my work <span>↗</span></a>
+            <a class="button button-secondary" href="assets/Vishnu_Kakaraparthi_CV.pdf" target="_blank" rel="noreferrer">Download CV <span>↓</span></a>
           </div>
+          <div class="hero-meta"><span>Currently at DealPrint</span><span class="rule"></span><span>Ph.D. candidate, Arizona State University</span></div>
         </div>
-
-        <!-- 
-<div class="section" id="about">
-  <div class="container">
-    <div class="card" data-aos="fade-up" data-aos-offset="10">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">About</div>
-            <p align="justify"> Hi, I am a passionate and driven Ph.D. student in Computer Science at SCAI, Arizona State University. My research focuses on creating innovative technologies for assisted living and sports through the intersection of computer vision and human-computer interaction.
-
-              I have had the opportunity to collaborate with partners from notable companies such as FedEx, Pizza Hut, Adidas, Amazon, and Edgenuity to solve real-life problems in data science, augmented reality, and human-computer interaction. As a lead researcher in the iLUX and ANGLE labs at ASU, I had an opportunity to guide undergraduate and graduate students in a variety of projects involving application development, data analysis, and data science.
-              
-              My expertise in affective sensors such as ECG - Electroencephalography, GSR - Galvanic Skin Response, Eye Tracking, and Facial Emotions, as well as my experience in using Microsoft HoloLens for developing educational and tutoring augmented reality applications, makes me a valuable resource in usability testing research in a variety of environments.
-              
-              I have been awarded two grants including the WearTech Grant and Global Sport Institute Grant, as well as being an NSF Research Trainee for Citizen-Centered Smart Cities and Smart Living. I also first-authored multiple papers in reputed journals and have co-authored a patent. I also have a very good track record of teaching, leadership, and mentoring.
-              
-              My excellent knowledge of HCI and computer vision combined with my contagious passion for research and teaching, make me a valuable addition to any team.</p>
-          </div>
+        <div class="hero-visual" aria-label="Vishnu Kakaraparthi, AI engineer and researcher">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <img src="assets/headshot.png" alt="Portrait of Vishnu Kakaraparthi" />
+          <span class="role-pill pill-one">Applied AI</span>
+          <span class="role-pill pill-two">Wearables &amp; HCI</span>
+          <span class="role-pill pill-three">Research</span>
         </div>
- 
-        <div class="col-lg-6 col-md-12">
-          <div class="card-body">
-            <div class="h4 mt-0 title">Basic Information</div>
-            <div class="row">
-              <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-              <div class="col-sm-8">24</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">anthony@company.com</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-              <div class="col-sm-8">+1718-111-0011</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-              <div class="col-sm-8">140, City Center, New York, U.S.A</div>
-            </div>
-            <div class="row mt-3">
-              <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
-              <div class="col-sm-8">English, German, French</div>
-            </div>
-          </div>
-        </div>
+      </section>
 
-      </div>
-    </div>
-  </div>
-</div>
-      -->
-
-        <div class="section" id="about">
-          <div class="container">
-            <div class="h4 text-center mb-4 title">About</div>
-
-            <div class="card" data-aos="fade-up" data-aos-offset="10">
-              <div class="row align-items-center"> <!-- Added 'align-items-center' class for vertical centering -->
-                <div class="col-lg-4 col-md-12 text-center"> <!-- Added 'text-center' class for horizontal centering -->
-                  <img src="images/interests.png" alt="Your Image" class="img-fluid" style="padding: 20px;">
-                </div>
-                <div class="col-lg-8 col-md-12">
-                  <div class="card-body">
-                    <p align="justify">Hi, I am a passionate and driven Ph.D. student in Computer Science at SCAI,
-                      Arizona State University. My research focuses on creating innovative technologies for assisted
-                      living and sports through the intersection of computer vision and human-computer interaction. I
-                      have had the opportunity to collaborate with partners from notable companies such as FedEx, Pizza
-                      Hut, Adidas, Amazon, and Edgenuity to solve real-life problems in data science, augmented reality,
-                      and human-computer interaction. As a lead researcher in the iLUX and ANGLE labs at ASU, I had an
-                      opportunity to guide undergraduate and graduate students in a variety of projects involving
-                      application development, data analysis, and data science. My expertise in affective sensors such
-                      as ECG - Electroencephalography, GSR - Galvanic Skin Response, Eye Tracking, and Facial Emotions,
-                      as well as my experience in using Microsoft HoloLens for developing educational and tutoring
-                      augmented reality applications, makes me a valuable resource in usability testing research in a
-                      variety of environments. I have been awarded two grants including the WearTech Grant and Global
-                      Sport Institute Grant, as well as being an NSF Research Trainee for Citizen-Centered Smart Cities
-                      and Smart Living. I also first-authored multiple papers in reputed journals and have co-authored a
-                      patent. I also have a very good track record of teaching, leadership, and mentoring. My excellent
-                      knowledge of HCI and computer vision combined with my contagious passion for research and
-                      teaching, make me a valuable addition to any team.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- Education -->
-          <div class="section" id="education">
-            <div class="container cc-education">
-              <div class="h4 text-center mb-4 title">Education</div>
-              <!-- MBA Section -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>July 2024</p>
-                      <div class="h5">MBA</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">Master of Business Administration</div>
-                      <div class="h6">Quantic School of Business and Technology</div>
-                      <p>MBA Candidate with a strong academic track record, awarded a 67% merit-based scholarship
-                        (Zenith Award for Academic Excellence) to an exclusive and highly competitive program boasting a
-                        mere 7% acceptance rate. Possessing a comprehensive understanding of essential business
-                        concepts, as demonstrated through courses in Markets & Economies, Accounting, Finance, Business
-                        Foundations, Cultural Intelligence, Leading Organizations, Strategy, Data & Decisions, Marketing
-                        & Pricing, Supply Chain & Operations, Advance Corporate-level Strategy, and Entrepreneurship.
-                        Equipped with an innovative curriculum that rivals prestigious institutions like Wharton,
-                        Harvard, and Stanford, ensuring a strong foundation for strategic decision-making and leadership
-                        in the corporate world.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Doctorate Section -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>May 2024</p>
-                      <div class="h5">Doctor of Philosophy</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">Ph.D., Computer Science</div>
-                      <div class="h6">Ira A. Fulton Schools of Engineering - Arizona State University</div>
-                      <p>Ph.D. candidate with a specialization in Data Science, Human-Computer Interaction (HCI),
-                        Wearables, and Computer Vision. Developed cutting-edge machine learning and image processing
-                        algorithms for a groundbreaking wrist-worn camera device, enabling advanced applications in
-                        sports tracking and medication management for older adults living independently. Co-led research
-                        initiatives as a Co-Principal Investigator (Co-PI), including a Global Sport Institute Grant
-                        focused on enhancing physical activity tracking tools for sports enthusiasts and elderly
-                        individuals living alone, and a WearTech project aimed at creating innovative medication
-                        management solutions using the same wrist-worn camera device.
-                      </p>
-                      <div class="h6">NSF-NRT Smart Cities Research Fellow</div>
-                      <p><b>Relevant Coursework:</b> Introduction to Smart Cities, Smart & Resilient Communities, Smart
-                        City Infrastructures and Technology, Introduction to Policy Informatics.</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Masters Section -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>December 2018</p>
-                      <div class="h5">Masters</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">Master of Computer Science</div>
-                      <div class="h6">Ira A. Fulton Schools of Engineering - Arizona State University </div>
-                      <p>I hold a Master's degree with a strong emphasis on data science and research. During my
-                        academic journey, I conducted cutting-edge research, including an investigation into the effects
-                        of light noise on cognitive activity using Pupil Dilation with Eye Tracking and Brain-Computer
-                        Interfaces. Additionally, my research involved modeling new constructs such as trust and
-                        motivation using EEG and GSR data. I also developed innovative instruments that seamlessly
-                        integrated biometric sensors with traditional tools, enabling comprehensive data collection from
-                        user experiences. I skillfully leveraged this data to enhance and refine user experiences.
-                        Furthermore, I led a series of A/B testing studies aimed at optimizing e-commerce sales and
-                        returns through the exploration of social and scarcity dynamics. My expertise in data analysis
-                        allowed me to extract actionable insights that drove strategic decision-making in these studies.
-                      </p>
-                      <p><b>Relevant Coursework:</b> Distributed Database Systems, Artificial Intelligence, Statistical
-                        Machine
-                        Learning, Natural Language Processing, Data Visualization, Data Mining, Knowledge Representation
-                        and Reasoning, Perception in Robotics, and Software Verification/Validation/Test.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Bachelors Section -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>November 2016</p>
-                      <div class="h5">Bachelors</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">Bachelors of Technology in Computer Science and Engineering</div>
-                      <div class="h6">SRM University</div>
-                      <p>I earned a Bachelor of Technology in Computer Science and Engineering with a Bachelor's Thesis
-                        that showcased my dedication to in-depth research and analysis. My thesis involved conducting a
-                        comprehensive and rigorous comparative assessment of various machine learning methodologies,
-                        including Random Forests, Support Vector Machines, Deep Neural Networks, Linear Regression, and
-                        Decision Trees. The primary objective was to predict closing prices for the Indian stock market.
-                        This project not only demonstrated my technical proficiency but also my ability to tackle
-                        complex real-world challenges using advanced computational techniques.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Research Experience -->
-          <div class="section" id="research">
-            <div class="container cc-education">
-              <div class="h4 text-center mb-4 title">Research Experience</div>
-
-              <!-- Doctoral Researcher Section 1 -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>July 2020 - Present</p>
-                      <div class="h5">Doctoral Researcher</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">Center for Cognitive Ubiquitous Computing (CUbiC) Lab, Tempe, Arizona</div>
-                      <div class="h6">Advisors: Dr. Troy McDaniel, Dr. Morris Goldberg, Dr. Hemanth Venkateswara</div>
-                      <div class="h6">Partners: ASU-GSI, WearTech, NSF</div>
-                      <ul class="custom-ul">
-                        <li>Developing advanced machine learning and image learning algorithms for a novel wrist-worn
-                          camera device.</li>
-                        <li>Collaborating as a Co-PI for Global Sport Institute Grant to understand and develop valuable
-                          tools for sports enthusiasts and old age adults living alone to track physical activities
-                          using a novel wrist-worn camera device.</li>
-                        <li>Collaborating as a Co-PI for WearTech to develop useful pill-taking tools for people with
-                          old age living alone using a novel wrist-worn camera device.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Doctoral Researcher Section 2 -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>January 2019 - July 2020</p>
-                      <div class="h5">Doctoral Researcher</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">Innovative Learner and User eXperience (iLUX) Lab, Tempe, Arizona</div>
-                      <div class="h6">Advisors: Dr. Robert Atkinson, Dr. Maria Elena Chavez-Echeagaray</div>
-                      <div class="h6">Partners: Adidas, Pizza Hut, Edgenuity</div>
-                      <ul class="custom-ul">
-                        <li>Researched effects of light noise on Cognitive activity using Pupil Dilation using Eye
-                          Tracking and Brain-Computer Interfaces.</li>
-                        <li>Other research paths include modeling new constructs such as trust and motivation using EEG
-                          and GSR data.</li>
-                        <li>Roles include data pre-processing and analysis involvement, mentoring, and managing graduate
-                          and undergraduate students collaborating in our lab.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Doctoral Researcher Section 3 -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>January 2019 - July 2020</p>
-                      <div class="h5">Doctoral Researcher</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">Advanced Next Generation Learning Environments (ANGLE) Lab, Tempe, Arizona
-                      </div>
-                      <div class="h6">Advisors: Dr. Robert Atkinson</div>
-                      <div class="h6">Partners: FedEx</div>
-                      <ul class="custom-ul">
-                        <li>Collaborated as a researcher in projects related to user experience in fields such as
-                          education, marketing, merchandising, product, and space design.</li>
-                        <li>User experience considers diverse aspects, including cognitive and affective components of
-                          every human experience.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Master's Research Section -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>August 2017 - December 2018</p>
-                      <div class="h5">Master's Research</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">E-commerce Sales And Returns Optimization, Tempe, Arizona</div>
-                      <div class="h6">Partners: Adidas</div>
-                      <div class="h6">Tools: Python, pandas, numpy</div>
-                      <ul class="custom-ul">
-                        <li>Analyzed the influence of scarcity and social proof on e-commerce sales and returns,
-                          providing actionable insights.</li>
-                        <li>Designed and executed experimental studies, unveiling the impact of product scarcity, social
-                          proof, localization, cue type, and choice on consumer behavior.</li>
-                        <li>Leveraged diverse data analysis techniques, including feature extraction and EEG data for
-                          influencer classification and customer behavior analysis using Qualtrics data in the
-                          e-commerce sector, to inform data-driven e-commerce strategies.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Bachelor's Thesis Section -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>January 2016 - July 2016</p>
-                      <div class="h5">Bachelor's Thesis</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">Forecasting Closing Price Indices, Kattankulathur, India</div>
-                      <div class="h6">Advisors: Dr. Revathi Venkataraman</div>
-                      <div class="h6">Tools: Python, Keras, TensorFlow, scikit-learn, pandas, numpy</div>
-                      <ul class="custom-ul">
-                        <li>Comparative study of different machine learning algorithms such as Random Forests, Support
-                          Vector Machine, and Deep Neural Networks along with traditional methods including Linear
-                          regression and Random Forests.</li>
-                        <li>Linear Regression: 0.63, SVM: 0.70, Decision Tree: 0.72, Random Forests: 0.79, and Deep NN:
-                          0.77.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Bachelor's Research Section 1 -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>January 2013 - August 2015</p>
-                      <div class="h5">Bachelor's Research</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">SRM - PURA (Providing Urban Amenities in Rural Areas), Kattankulathur, India</div>
-                      <ul class="custom-ul">
-                        <li>Provided rural areas with e-learning, IT empowerment, e-governance, agriculture, healthcare,
-                          and women empowerment infrastructure.</li>
-                        <li>Integrated APIs to front-end and provided back-end design support in MySQL and PHP.</li>
-                        <li>Implemented audio translation of website to Tamil on hover.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <!-- Bachelor's Research Section 2 -->
-              <div class="card">
-                <div class="row">
-                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body cc-education-header">
-                      <p>January 2013 - December 2015</p>
-                      <div class="h5">Bachelor's Research</div>
-                    </div>
-                  </div>
-                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body">
-                      <div class="h5">SRM-SE (SRM Search Engine), Kattankulathur, India</div>
-                      <div class="h6">Partners: SRM University and NIXI</div>
-                      <ul class="custom-ul">
-                        <li>SRM-SE (SRM Search Engine) is a search engine that revolutionizes search experience by
-                          diversifying the number of results for a specified query. SRM-SE also filters junk results,
-                          clusters the rest into different categories relevant to the query, and displays them in a
-                          user-friendly manner.</li>
-                        <li>Contributed mainly to server and network administration.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- Work Experience -->
-              <div class="section" id="work">
-                <div class="container cc-experience">
-                  <div class="h4 text-center mb-4 title">Work Experience</div>
-
-                  <!-- Machine Learning Intern -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        style="display: flex; align-items: center;" data-aos-duration="500">
-                        <div class="card-body cc-experience-header">
-                          <p>June 2023 - August 2023</p>
-                          <div class="h5">Machine Learning Intern</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">BrainChip Inc, Laguna Hills, California</div>
-                          <div class="h6"> Partners: Zalmotec, Mercedes-Benz </div>
-                          <div class="h6"> Tools: Python, Keras</div>
-                          <ul class="custom-ul">
-                            <li>Developed and deployed efficient machine learning models, achieving <b>4x smaller size
-                                weights, 500x energy efficiency, and 4x faster processing than GTX 1080 </b> real-world
-                              applications, emphasizing performance and sustainability.</li>
-                            <li>Led a <b>multimodal anomaly detection project</b> that integrated sensor data
-                              (vibration,
-                              pressure, temperature, flow rate, voltage, and current consumption), enhancing detection
-                              accuracy across diverse domains, and showcasing adaptability and innovation.</li>
-                            <li>Managed <b>end-to-end collaboration with hardware firms, especially Zalmotec,</b> to
-                              successfully build and demonstrate remarkable capabilities of BrainChip's Akida platform,
-                              underscoring my pivotal role in driving development and delivery of cutting-edge anomaly
-                              detection solutions.</li>
-                            <li>Spearheaded development of <b>distracted driving technology,</b> achieving energy and
-                              processing gains, positioning for potential project collaboration with <b>Mercedes-Benz
-                                for
-                                Vision EQXX Concept</b>, and showcasing capabilities of AKD1000 in the automotive safety
-                              domain.</li>
-                          </ul>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Technical Lead (Toy Upgrade) -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-experience-header">
-                          <p>June 2018 - January 2020</p>
-                          <div class="h5">Technical Lead</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Toy Upgrade (ASU Startup), Tempe, Arizona</div>
-                          <div class="h6"> Tools: Python</div>
-                          <ul class="custom-ul">
-                            <li>Oversaw and motivated a development team of 5 in developing a futuristic educational toy
-                              to
-                              enable learning with fun.</li>
-                            <li>Developed a pronunciation matching system to verify and check correctness of spoken
-                              words
-                              using different APIs such as Soap Box Labs.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Technical Lead (Heyludwig) -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-experience-header">
-                          <p>June 2018 - January 2020</p>
-                          <div class="h5">Technical Lead</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Heyludwig - Partners Dog Training (Startup), Tempe, Arizona</div>
-                          <div class="h6"> Tools: Python, Dialog Flow</div>
-                          <ul class="custom-ul">
-                            <li>Oversaw development and deployment of chatbot built using Dialog Flow with Facebook
-                              Messenger.
-                            </li>
-                            <li>HeyLudwig uses Artificial Intelligence to generate personalized dog training content
-                              created
-                              by an industry-leading dog training school to consider every factor of your dog's
-                              behavior.
-                            </li>
-                            <ul class="custom-ul">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Research and Development Intern -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-experience-header">
-                          <p>January 2016 - April 2016</p>
-                          <div class="h5">Research and Development Intern</div>
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Ericsson India Pvt Ltd., Gurugram, India</div>
-                          <div class="h6">Tools: Java, Apache Spark, Spark SQL, Spark ML</div>
-                          <ul class="custom-ul">
-                            <li></b>Churn Prediction</b> - Achieved 84.8% accuracy in predicting potential subscriber
-                              loss by
-                              analyzing call behavior patterns and correlating with previously churned subscribers.</li>
-                            <li><b>Facebook Stream Analytics</b> - Achieved 67.6% accuracy on segmenting Facebook posts
-                              from
-                              news
-                              feeds into Customer Service, Network, Promotions, and Other categories for each service
-                              provider
-                              with multiclass logistic regression.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Technical Skills and Certifications -->
-              <!-- Skills Section -->
-              <div class="section" id="skills">
-                <div class="container">
-                  <div class="h4 text-center mb-4 title">Technical Skills and Certifications</div>
-                  <div class="card" data-aos="fade-up" data-aos-offset="10">
-                    <div class="card-body">
-                      <table>
-                        <tr>
-                          <td><strong>Programming:</strong></td>
-                          <td>Python, Java.</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Databases:</strong></td>
-                          <td>MySQL, PostgreSQL, MongoDB.</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Big Data Tools:</strong></td>
-                          <td>Hadoop MapReduce, Apache Spark, Mahout.</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Data Science Tools:</strong></td>
-                          <td>Tensorflow, Keras, Pandas, NumPy, SciPy, Matplotlib, Scikit-learn.</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Other Data Tools:</strong></td>
-                          <td>Tableau, Elasticsearch.</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Other Tools/Software:</strong></td>
-                          <td>InVision Studio, iMotions, Git.</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Cloud Platforms:</strong></td>
-                          <td>Amazon Web Services (AWS), Google Cloud (GCP).</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Certifications:</strong></td>
-                          <td>Deep Learning Specialization (deeplearning.ai, Coursera), Machine Learning (Stanford,
-                            Coursera).
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- PUBLICATIONS AND PATENTS -->
-              <div class="section" id="publications">
-                <div class="container cc-education">
-                  <div class="h4 text-center mb-4 title">Papers and Patents</div>
-                  <div class="card" data-aos="fade-up" data-aos-offset="10">
-                    <div class="card-body">
-                      <ul class="custom-ul">
-                        <li data-aos="fade-up">
-                          A Hand-Directed System For Identifying Activities, Patent Pending, Troy McDaniel, Mozest
-                          Goldberg,
-                          Hemanth Kumar Demakethepalli Venkateswara, Sethuraman Panchanathan, Vishnu Prateek
-                          Kakaraparthi.
-                          U.S. patent App. <a href="https://www.freepatentsonline.com/y2023/0324993.html"
-                            target="_blank">#20230324993</a>
-                        </li>
-                        <li data-aos="fade-up">
-                          Kakaraparthi, V., Goldberg, M., McDaniel, T. (2023). Wrist View: Understanding Human Activity
-                          Through Hand. HCII 2023. Lecture Notes in Computer Science, vol 14021. <a
-                            href="https://doi.org/https://doi.org/10.1007/978-3-031-35897-5_41"
-                            target="_blank">https://doi.org/10.1007/978-3-031-35897-5_41</a>
-                        </li>
-                        <li data-aos="fade-up">
-                          Kakaraparthi, V., McDaniel, T., Venkateswara, H., Goldberg, M. (2022). PERACTIV: Personalized
-                          Activity Monitoring - Ask My Hands. HCII 2022. Lecture Notes in Computer Science, vol 13326.
-                          <a href="https://doi.org/https://doi.org/10.1007/978-3-031-05431-0_18"
-                            target="_blank">https://doi.org/10.1007/978-3-031-05431-0_18</a>
-                        </li>
-                        <li data-aos="fade-up">Vishnu Prateek K, "Machine Learning Algorithm Hypothesis on Smart
-                          Gyroscopic Tuned Dampers for Earthquake Resistance Building", International Journal of
-                          Multidisciplinary Research and Development, vol. 2, pp.705-707, 2015.
-                          <a href="https://www.allsubjectjournal.com/assets/archives/2015/vol2issue10/86.pdf"
-                            target="_blank">Link</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- Awards and Honors -->
-              <div class="section" id="awards-and-honors">
-                <div class="container cc-education">
-                  <div class="h4 text-center mb-4 title">Awards and Honors</div>
-
-                  <!-- New Award: Fall 2023 ASU Graduate and Professional Students Association (GPSA) Teaching Excellence Award -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>August 2023 - December 2023</p>
-                          <div class="h5">Teaching Excellence Award</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5"> ASU Graduate and Professional Students Association (GPSA)</div>
-                          <ul class="custom-ul">
-                            <li>Recognized for outstanding contributions to teaching and academic excellence,
-                              demonstrating a commitment to students' growth and learning during the Fall 2023 academic
-                              term.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Award 1: WearTech Grant -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>July 2021 - June 2022</p>
-                          <div class="h5">WearTech Grant (Greater Phoenix Economic Council (GPEC))</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Cognitive Ubiquitous Computing (CUbiC) Lab, Tempe, Arizona</div>
-                          <ul class="custom-ul">
-                            <li>Successfully secured a $20,000 grant as a Co-PI to conduct research on improving
-                              medication adherence among elderly individuals living alone.</li>
-                            <li>Developed innovative video-detection algorithms to detect and address pain points and
-                              reasons for unsuccessful pill-taking activities using a novel wrist-worn camera device.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Award 2: Global Sport Institute Grant -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2021 - December 2021</p>
-                          <div class="h5">Global Sport Institute Grant</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Cognitive Ubiquitous Computing (CUbiC) Lab, Tempe, Arizona</div>
-                          <ul class="custom-ul">
-                            <li>Successfully secured a $20,000 grant as a Co-PI to develop innovative tools for tracking
-                              physical activities and improving remote training experiences.</li>
-                            <li>Developed a novel wrist-worn camera device to facilitate tracking of physical activities
-                              and reduce the need for personal trainers, particularly among sports enthusiasts and
-                              elderly individuals living alone.</li>
-                            <li>Developed valuable tools using a novel wrist-worn camera device to track physical
-                              activities, improve remote training experiences, and reduce the need for personal trainers
-                              among sports enthusiasts and elderly individuals living alone.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <!-- Other Awards -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <div class="h5">Other Awards and Honors</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <ul class="custom-ul">
-                            <li>Part of the third prize-winning team in All India Software Development SESCON-15
-                              conducted at Sri Eshwar College of Engineering in 2015.</li>
-                            <li>Won first prize in a coding competition, Denken Fest, conducted during Aaruush at SRM
-                              University in 2014.</li>
-                            <li>Award for Academic Excellence by Indus Foundation in 2014.</li>
-                            <li>Won first prize in CTF (Capture flag) conducted at eHack by Infysec as a group
-                              competition and placed at sixth position in the individual competition in 2013.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <!--
-<div class="section" id="skill">
-  <div class="container">
-    <div class="h4 text-center mb-4 title">Professional Skills</div>
-    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">JavaScript</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">SASS</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Bootstrap</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Photoshop</span>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
-              </div>
-            </div>
-          </div>
+      <div class="wrap">
+        <div class="stat-strip" aria-label="At a glance">
+          <div><strong>6</strong><span>Publications<br />&amp; a U.S. patent</span></div>
+          <div><strong>$40K</strong><span>Grants secured<br />as Co-PI</span></div>
+          <div><strong>172+</strong><span>Papers reviewed<br />for CHI, HRI, ETRA</span></div>
+          <div><strong>1,600+</strong><span>Students taught<br />at ASU</span></div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
--->
 
-              <!-- Academic Projects -->
-              <div class="section" id="academic-projects">
-                <div class="container cc-education">
-                  <div class="h4 text-center mb-4 title">Academic Projects</div>
-
-                  <!-- Project 1: A Dementia Framework -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2022 - February 2022</p>
-                          <div class="h5">Introduction to Policy Informatics</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">A Dementia Framework</div>
-                          <ul class="custom-ul">
-                            <li>Developed and presented a Participatory Design Framework for Dementia Technology.</li>
-                            <li>Integrated key pillars of Technology, Laws, Architecture, Markets, Norms, and Education.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Project 2: Relationship Between Technological Tools and those Affected by Dementia -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>August 2021 - December 2021</p>
-                          <div class="h5">Smart City Infrastructures and Technology</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Relationship Between Technological Tools and those Affected by Dementia</div>
-                          <ul class="custom-ul">
-                            <li>Understanding Relationship Between Technological Tools and those Affected by Dementia.
-                            </li>
-                            <li>Co-initiate, Co-discover, Co-inspire, Co-define, Co-develop, Co-deliver phases.</li>
-                            <li>Dementia patients benefit from low-fidelity technology solutions.</li>
-                            <li>Explored the usability of location services as a future mode of operation.</li>
-                            <li>Implemented a framework for human-centered development called "Compassion by design."
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Project 3: LIDAR Object Detection -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>February 2019 - May 2019</p>
-                          <div class="h5">Perception in Robotics</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">LIDAR Object Detection </div>
-                          <div class="h6">Tools: Python, o3d, laspy, TensorFlow, and ROS </div>
-
-                          <ul class="custom-ul">
-                            <li>Pioneered cutting-edge LIDAR object detection algorithms, including PointNet,
-                              PointNet++, and VoxelNet.</li>
-                            <li>Enhanced precision in environmental perception.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Project 4: Vision based manipulator movement with Fetch -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>February 2019 - May 2019</p>
-                          <div class="h5">Perception in Robotics</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Vision based manipulator movement with Fetch</div>
-                          <div class="h6">Tools: Python, ROS, opencv</div>
-                          <ul class="custom-ul">
-                            <li>Successfully implemented a visual serving technique using depth estimation for Fetch
-                              robot to locate and reach target objects.</li>
-                            <li>Developed a novel approach using wrist-centric view to find the pose of the end effector
-                              for the Fetch robot.</li>
-                            <li>Developed an approach using stereo cameras on the robot's head to estimate depth and
-                              determine the pose of objects, overcoming previous challenges with obstructed views and
-                              tangled cables.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Project 5: Semantic Search on Movie Summary -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2018 - May 2018</p>
-                          <div class="h5">Natural Language Processing</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Semantic Search on Movie Summary</div>
-                          <div class="h6">Tools: Python, Keras</div>
-                          <ul class="custom-ul">
-                            <li>Led a team of four to model a question-answering system based on semantics of a movie
-                              summary.</li>
-                            <li>Helped users find a movie based on arbitrary knowledge about the movie using Convolution
-                              Neural Networks, Coreference Resolution, Sentence Embedding, Event and Named Entity
-                              Networks, and achieved 54.7% accuracy.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Project 6: Spatial Hot Spot Analysis from Geo Spatial-Temporal Data -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>August 2017 - November 2017</p>
-                          <div class="h5">Distributed Database Systems </div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Spatial Hot Spot Analysis from Geo Spatial-Temporal Data</div>
-                          <div class="h6">Tools: Spark, Apache Sedona, Scala, and Ganglia</div>
-                          <ul class="custom-ul">
-                            <li>Built a hot spot analysis model analyzing a 50 GB+ NYC Taxi and Limousine Commission
-                              dataset using Getis-Ord statistic, Apache Spark, Scala, and Ganglia.</li>
-                            <li>Identified 50 most statistically significant NYC locations by passenger count.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Project 7: Classification of Higgs Boson Particle -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2017 - May 2017</p>
-                          <div class="h5">Statistical Machine Learning</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Classification of Higgs Boson Particle</div>
-                          <div class="h6">Tools: Python, Keras, TensorFlow, scikit-learn, pandas</div>
-                          <ul class="custom-ul">
-                            <li>Built an ensemble of three neural networks and six random forest models using TensorFlow
-                              and scikit-learn.</li>
-                            <li>Trained models on 11 million records and achieved 71% accuracy.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Project 8: Maximize NYC Taxi Driver Revenue Visualization -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2017 - May 2017</p>
-                          <div class="h5">Data Visualization </div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Maximize NYC Taxi Driver Revenue Visualization</div>
-                          <div class="h6">Tools: JavaScript, D3, crossfilter, dc.js</div>
-                          <ul class="custom-ul">
-                            <li>Implemented visualization system using state-of-the-art techniques such as Shneiderman's
-                              Information Visualization mantra and multiple coordinated views.</li>
-                            <li>Developed query-based visualization from 1 billion taxi trips for insights on pickup
-                              locations based on location, pickup time, fare, tip, and passenger count.</li>
-                            <li>The system helps taxi drivers increase productivity and revenue by allowing them to
-                              query and find the best pickup locations.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Project 9: Knowledge Base Based Question Answering System -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2017 - May 2017</p>
-                          <div class="h5">Knowledge Representation and Reasoning</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">Knowledge Base Based Question Answering System</div>
-                          <div class="h6">Tools: Stanford NLP Tools, and SPARQL</div>
-                          <ul class="custom-ul">
-                            <li>Developed a Question Answering System by implementing Semantic Parsing, Query
-                              formulation, and Graph matching modules.</li>
-                            <li>Used DBpedia as a knowledge base to answer questions related to firms.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Hackathon Projects -->
-              <div class="section" id="hackathon-projects">
-                <div class="container cc-education">
-                  <div class="h4 text-center mb-4 title">Hackathon Projects</div>
-
-                  <!-- Hackathon Project 1: WizardEyes -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>September 2021</p>
-                          <div class="h5">Transatlantic Hackathon</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h5">WizardEyes</div>
-                          <div class="h6">Tools: Python, OpenVino, DepthAI, AWS</div>
-                          <ul class="custom-ul">
-                            <li>Successfully developed a Smart Cities and Infrastructure Module using a Luxonis
-                              Oak-D-IoT-40 (Edge device) for Occupancy Counter, Queue Counter, Mask Detection, Social
-                              Distance Checker, and Huge Crowd Counter.</li>
-                            <li>Provided a public API for crowd analytics.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <!-- Open Source Contributions -->
-              <div class="section" id="open-source-contributions">
-                <div class="container cc-education">
-                  <div class="h4 text-center mb-4 title">Open Source Contributions</div>
-
-                  <!-- Mayhem Heroes Contribution -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>April 2022 - June 2022</p>
-                          <div class="h5">Mayhem Heroes Contribution</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <p><strong>Skills/Technologies:</strong> Rust, Docker, Cargo, DevOps, DevSecOps, Github
-                            Actions</p>
-                          <ul>
-                            <li>Integrated Mayhem, an autonomous AI fuzzy testing tool that
-                              finds new exploitable bugs in 48 qualified OSS projects.</li>
-                            <li> Recognized as a Top 2nd Mayhem Hero for integrating Mayhem.
-                            </li>
-                          </ul>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Professional Services -->
-              <div class="section" id="professional-services">
-                <div class="container cc-education">
-                  <div class="h4 text-center mb-4 title">Professional Services</div>
-
-                  <!-- PC Member & Reviewer -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <div class="h5">PC Member & Reviewer</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <ul class="custom-ul">
-                            <li>ACM Transactions on Multimedia Computing, Communications, and Alililications (TOMM)</li>
-                            <li>ACM Conference on Human Factors in Computing Systems (CHI)</li>
-                            <li>Pacific Visualization Symposium (PacificVis)</li>
-                            <li>Computer-Human Interaction of Australia (OzCHI)</li>
-                            <li>International AAAI Conference on Web and Social Media (ICWSM)</li>
-                            <li>Conference on Human Robot Interaction (HRI)</li>
-                            <li>International Conference on Human-Computer Interaction (HCII)</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Teaching Experience -->
-              <div class="section" id="teaching-experience">
-                <div class="container cc-education">
-                  <div class="h4 text-center mb-4 title">Teaching Experience</div>
-
-                  <!-- Graduate Teaching Assistant Entry -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2019 - July 2023</p>
-                          <div class="h5">Graduate Teaching Assistant</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h6">School of Computing and Augmented Intelligence, Arizona State University,
-                            Tempe, Arizona</div>
-                          <ul class="custom-ul">
-                            <li>Taught over 200 students Human-Computer Interaction (CSE 463) under Dr. Hasti Seifi
-                              concepts like prototyping, usability principles, and heuristics from Spring 2023.</li>
-                            <li>Assisted professor in designing course structure, quizzes, examinations, and grading.
-                            </li>
-                            <li>Course Instructor for FSE 100: Introduction to Engineering (Fall 2020, 2022 and 2023)
-                              fundamental concepts in engineering design process; working in engineering teams;
-                              engineering profession; engineering models; written and oral technical communication
-                              skills.</li>
-                            <li>Taught over 1400 students Human-Computer Interaction (CSE 463) under Dr. Robert Atkinson
-                              concepts like prototyping, usability principles, and heuristics from Spring 2019, Fall
-                              2019,
-                              and Spring 2020. Assisted professor in designing course structure, examinations, and
-                              grading.</li>
-                            <li>Lab Instructor for CSE 110 : Principles of Programming with Java (Summer 2019, 2020, and
-                              2022). Taught basics of Java to a class of 60 students and provided one-on-one attention
-                              and mentorship to inculcate interest in coding.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Graduate Services Assistant - Grader/Lab Instructor Entry -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>August 2017 - July 2022</p>
-                          <div class="h5">Graduate Services Assistant - Grader/Lab Instructor</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h6">School of Computing and Augmented Intelligence, Arizona State University,
-                            Tempe,
-                            Arizona</div>
-                          <ul class="custom-ul">
-                            <li>Assisted professor in Introduction to Software Engineering (CSE 360) in designing course
-                              structure, assignments, examinations, and grading.</li>
-                            <li>CSE 180 : Computer Literacy (Summer 2020). Taught basic computer fundamentals such as
-                              Microsoft Excel, Word, HTML, SQL, Networking, Security, etc., to a class of 150 students.
-                            </li>
-                            <li>Assisted professor in designing course structure, examinations, and grading for Intro to
-                              Human-Computer Interaction (CSE 463).</li>
-                            <li>Assisted professor in grading assignments and examinations for CSE 110: Principles of
-                              Programming with Java.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Capstone Team Mentor Entry 1 -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>August 2021 - May 2022</p>
-                          <div class="h5">Capstone Team Mentor</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h6">Center for Cognitive Ubiquitous Computing (CUbiC) Lab, Tempe, Arizona</div>
-                          <ul class="custom-ul">
-                            <li>Mentored four undergraduate students and one undergraduate volunteer to develop and test
-                              new
-                              wearable technology using off-the-shelf components.</li>
-                            <li>Developed mobile and deep learning applications.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Capstone Team Mentor Entry 2 -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2019 - December 2020</p>
-                          <div class="h5">Capstone Team Mentor</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h6">innovative Learner and User eXperience (<span
-                              style="text-transform: lowercase;">i</span>LUX) Lab, Tempe, Arizona</div>
-                          <ul class="custom-ul">
-                            <li>Mentored three teams of 2 graduate students and 18 undergraduate students developing and
-                              testing new features in applications like driver tracking, new payment options, and new
-                              localization layouts.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- AI Instructor Entry -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>June 2020 - June 2020</p>
-                          <div class="h5">AI Instructor</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h6">AI4ALL, Tempe, Arizona</div>
-                          <ul class="custom-ul">
-                            <li>Created and taught a premier AI curriculum for 24 high school students covering concepts
-                              such as Clustering, Classification, Naive Bayes, Regression, Neural Networks, Data, and
-                              Bias
-                              with hands-on experience developing projects.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Capstone Team Mentor Entry 3 -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2019 - December 2019</p>
-                          <div class="h5">Capstone Team Mentor</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h6">innovative Learner and User eXperience (<span
-                              style="text-transform: lowercase;">i</span>LUX) Lab, Tempe, Arizona</div>
-                          <ul class="custom-ul">
-                            <li>Mentored four students to build a web-based and standalone application to help clean and
-                              process data collected from various sources such as Brain-Computer Interfaces, Galvanic
-                              Skin
-                              Response, AFFDEX/FACET Facial Expression, and Eye Tracking to increase efficiency of teams
-                              working with data.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Capstone Team Mentor Entry 4 -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <p>January 2019 - December 2019</p>
-                          <div class="h5">Capstone Team Mentor</div>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h6">Advanced Next Generation Learning Environments (ANGLE) Lab, Tempe, Arizona
-                          </div>
-                          <ul class="custom-ul">
-                            <li>Mentored two teams of one graduate and 12 undergraduate students to efficiently improve
-                              packing methods for shipping companies, especially freight shipping for FedEx.</li>
-                            <li>Two applications are used as a tutoring or supervising system that helps to build stable
-                              pallets and efficiently fill shipping containers of various sizes and shapes.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!--
-
-<div class="section" id="experience">
-  <div class="container cc-experience">
-    <div class="h4 text-center mb-4 title">Work Experience</div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>March 2016 - Present</p>
-            <div class="h5">CreativeM</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Front End Developer</div>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>April 2014 - March 2016</p>
-            <div class="h5">WebNote</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Web Developer</div>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="row">
-        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body cc-experience-header">
-            <p>April 2013 - February 2014</p>
-            <div class="h5">WEBM</div>
-          </div>
-        </div>
-        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-          <div class="card-body">
-            <div class="h5">Intern</div>
-            <p>Euismod massa scelerisque suspendisse fermentum habitant vitae ullamcorper magna quam iaculis, tristique sapien taciti mollis interdum sagittis libero nunc inceptos tellus, hendrerit vel eleifend primis lectus quisque cubilia sed mauris. Lacinia porta vestibulum diam integer quisque eros pulvinar curae, curabitur feugiat arcu vivamus parturient aliquet laoreet at, eu etiam pretium molestie ultricies sollicitudin dui.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
--->
-
-              <!--
-<div class="section" id="reference">
-  <div class="container cc-reference">
-    <div class="h4 mb-4 text-center title">References</div>
-    <div class="card" data-aos="zoom-in">
-      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
-          <li data-target="#cc-Indicators" data-slide-to="1"></li>
-          <li data-target="#cc-Indicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg" alt="Image"/>
-                <div class="h5 pt-2">Aiyana</div>
-                <p class="category">CEO / WEBM</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
-              </div>
+      <section id="about" class="section about-section">
+        <div class="wrap">
+          <div class="two-column">
+            <div>
+              <span class="section-kicker">01 / About me</span>
+              <h2>Engineer by trade,<br /><em>researcher by habit.</em></h2>
+              <p class="large-copy">I move between shipping production AI and doing research on it. At DealPrint I own the AI stack for an M&amp;A platform: calibrated classifiers, eleven human-in-the-loop agents, voice agents, and a finance engine. At ASU I lead PERACTIV, a wrist-centric AI system for activity recognition and medication adherence.</p>
+              <p class="about-signoff">Applied AI · Wearables &amp; HCI · Computer vision · Teaching</p>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg" alt="Image"/>
-                <div class="h5 pt-2">Braiden</div>
-                <p class="category">CEO / Creativem</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg" alt="Image"/>
-                <div class="h5 pt-2">Alexander</div>
-                <p class="category">CEO / Webnote</p>
-              </div>
-              <div class="col-lg-10 col-md-9">
-                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
--->
-
-
-
-
-              <!-- Administrative Experience -->
-              <div class="section" id="administrative-experience">
-                <div class="container cc-education">
-                  <div class="h4 text-center mb-4 title">Administrative Experience</div>
-
-                  <!-- Administrative Researcher -->
-                  <div class="card">
-                    <div class="row">
-                      <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-                        data-aos-duration="500">
-                        <div class="card-body cc-education-header">
-                          <div class="h5">Administrative Researcher</div>
-                          <p>January 2019 - July 2020</p>
-                        </div>
-                      </div>
-                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                        <div class="card-body">
-                          <div class="h6">innovative Learner and User eXperience (<span
-                              style="text-transform: lowercase;">i</span>LUX) and Advanced Next Generation
-                            Learning Environments (ANGLE) Lab, Tempe, Arizona</div>
-                          <ul class="custom-ul">
-                            <li>Orchestrated seamless daily operations providing unwavering support to a dynamic team,
-                              and
-                              offering invaluable mentorship to foster professional growth.</li>
-                            <li>Spearheaded and streamlined diverse research initiatives in Affective Computing and
-                              Augmented
-                              Reality utilizing Hololens, guiding collaborative efforts, securing grants through
-                              meticulously
-                              crafted proposals, and nurturing the development of both graduate and undergraduate
-                              talents.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- INVITED TALKS -->
-              <div class="section" id="invited-talks">
-                <div class="container cc-education">
-                  <div class="h4 text-center mb-4 title">Invited Talks</div>
-                  <div class="card" data-aos="fade-up" data-aos-offset="10">
-                    <div class="card-body">
-                      <ul class="custom-ul">
-                        <li data-aos="fade-up">ASU - FSE 150 Perspectives on Grand Challenges for Engineering - Joy of
-                          Living
-                          through Technology.</li>
-                        <li data-aos="fade-up">Invited Speaker at ASU Data/Methods Workshop, delivering expert insights
-                          on Python Programming and Machine Learning.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-              <!-- Portfolio-->
-              <div class="section" id="portfolio">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-6 ml-auto mr-auto">
-                      <div class="h4 text-center mb-4 title">Portfolio</div>
-                      <div class="nav-align-center">
-                        <ul class="nav nav-pills nav-pills-primary" role="tablist">
-                          <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development"
-                              role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
-                          <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design"
-                              role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-                          <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography"
-                              role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-content gallery mt-5">
-                    <div class="tab-pane active" id="web-development">
-                      <div class="ml-auto mr-auto">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Recent Project</div>
-                                    <p>Web Development</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Startup Project</div>
-                                    <p>Web Development</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Food Order Project</div>
-                                    <p>Web Development</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#web-development">
-                                <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Web Advertising Project</div>
-                                    <p>Web Development</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane" id="graphic-design" role="tabpanel">
-                      <div class="ml-auto mr-auto">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                                <figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Triangle Pattern</div>
-                                    <p>Graphic Design</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                                <figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Abstract Umbrella</div>
-                                    <p>Graphic Design</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                                <figure class="cc-effect"><img src="images/graphic-design-3.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Cube Surface Texture</div>
-                                    <p>Graphic Design</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
-                                <figure class="cc-effect"><img src="images/graphic-design-4.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Abstract Line</div>
-                                    <p>Graphic Design</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane" id="Photography" role="tabpanel">
-                      <div class="ml-auto mr-auto">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                                <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Photoshoot</div>
-                                    <p>Photography</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                                <figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Wedding Photoshoot</div>
-                                    <p>Photography</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                                <figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Beach Photoshoot</div>
-                                    <p>Photography</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                              data-aos-anchor-placement="top-bottom"><a href="#Photography">
-                                <figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image" />
-                                  <figcaption>
-                                    <div class="h4">Nature Photoshoot</div>
-                                    <p>Photography</p>
-                                  </figcaption>
-                                </figure>
-                              </a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="section" id="photos">
-                <div class="container">
-                  <div class="h4 text-center mb-4 title">Photos</div>
-                  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-                    <!-- Indicators (Dots) -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                      <li data-target="#myCarousel" data-slide-to="3"></li>
-                      <li data-target="#myCarousel" data-slide-to="4"></li>
-                      <li data-target="#myCarousel" data-slide-to="5"></li>
-                      <li data-target="#myCarousel" data-slide-to="6"></li>
-                      <li data-target="#myCarousel" data-slide-to="7"></li>
-                    </ol>
-
-                    <!-- Slides (Images) -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/photo-1.jpg" alt="Photo 1">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/photo-2.jpg" alt="Photo 2">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/photo-4.jpg" alt="Photo 4">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/photo-5.jpg" alt="Photo 5">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/photo-8.jpg" alt="Photo 5">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/photo-6.jpg" alt="Photo 6">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/photo-7.jpg" alt="Photo 7">
-                      </div>
-                      <div class="carousel-item">
-                        <img class="d-block w-100" src="images/photo-3.jpg" alt="Photo 3">
-                      </div>
-                    </div>
-
-                    <!-- Navigation Arrows -->
-                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="section" id="contact">
-                <div class="cc-contact-information" style="background-image: url('images/staticmap.png')">
-                  <div class="container">
-                    <div class="cc-contact">
-                      <div class="row">
-                        <div class="col-md-9">
-                          <div class="card mb-0" data-aos="zoom-in">
-                            <div class="h4 text-center title">Contact Me</div>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="card-body">
-                                  <form action="https://formspree.io/f/xwkdykzj" method="POST">
-                                    <div class="p pb-3"><strong>Feel free to contact me </strong></div>
-                                    <div class="row mb-3">
-                                      <div class="col">
-                                        <div class="input-group"><span class="input-group-addon"><i
-                                              class="fa fa-user-circle"></i></span>
-                                          <input class="form-control" type="text" name="name" placeholder="Your Name"
-                                            required="required" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                      <div class="col">
-                                        <div class="input-group"><span class="input-group-addon"><i
-                                              class="fa fa-file-text"></i></span>
-                                          <input class="form-control" type="text" name="Subject" placeholder="Subject"
-                                            required="required" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                      <div class="col">
-                                        <div class="input-group"><span class="input-group-addon"><i
-                                              class="fa fa-envelope"></i></span>
-                                          <input class="form-control" type="email" name="_replyto"
-                                            placeholder="Your E-mail" required="required" />
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                      <div class="col">
-                                        <div class="form-group">
-                                          <textarea class="form-control" name="message" placeholder="Your Message"
-                                            required="required"></textarea>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <div class="col">
-                                        <button class="btn btn-primary" type="submit">Send</button>
-                                      </div>
-                                    </div>
-                                  </form>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="card-body">
-                                  <p class="mb-0"><strong>Phone</strong></p>
-                                  <p class="pb-2">+1 (480) 553-4228</p>
-                                  <p class="mb-0"><strong>Email</strong></p>
-                                  <p> vkakarap@asu.edu</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="accordion-list">
+              <details open>
+                <summary><span>01</span> Founding AI engineer <b>−</b></summary>
+                <p>Production LLM systems on AWS Bedrock and Claude: document classification with calibrated confidence, agentic customer-lifecycle workflows, LiveKit voice agents, and unit-tested deal calculators.</p>
+              </details>
+              <details>
+                <summary><span>02</span> Wearable AI researcher <b>＋</b></summary>
+                <p>Wrist-worn camera systems and ML for human activity understanding, medication adherence, and fall detection. Co-PI on WearTech and Global Sport Institute grants.</p>
+              </details>
+              <details>
+                <summary><span>03</span> Educator &amp; mentor <b>＋</b></summary>
+                <p>Instructor for FSE 100 and teaching assistant for CSE 463 and CSE 110 at ASU. Mentored 20+ capstone students across three labs. Graduate Teaching Excellence and Mentorship awards.</p>
+              </details>
+              <details>
+                <summary><span>04</span> Reviewer &amp; editor <b>＋</b></summary>
+                <p>172+ reviews for ACM CHI, HRI, ETRA, TOMM, HCII and more. Editorial boards at Clareus Scientific and PriMera Scientific Engineering. Co-chair at ETRA 2025 and ICSM 2025.</p>
+              </details>
             </div>
           </div>
 
-
-
-          <footer class="footer">
-            <div class="container text-center">
-              <a class="cc-facebook btn btn-link" href="https://github.com/prateekvishnu"><i class="fa fa-github fa-2x"
-                  aria-hidden="true"></i></a>
-              <a class="cc-twitter btn btn-link" href="https://scholar.google.com/citations?user=WQIuH_YAAAAJ&hl=en"><i
-                  class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></a>
-              <a class="cc-google-plus btn btn-link" href="https://www.linkedin.com/in/prateekvishnu/"><i
-                  class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-              <a class="cc-instagram btn btn-link" href="https://www.instagram.com/sky.is.the.lower.limit/"><i
-                  class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <div class="education-block" aria-labelledby="education-title">
+            <div class="education-heading">
+              <span class="education-label">Education</span>
+              <h3 id="education-title">Academic foundation</h3>
             </div>
+            <div class="education-cards">
+              <article class="education-card">
+                <div class="education-logo"><img src="assets/logos/asu.png" alt="Arizona State University logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="education-logo-fallback" hidden>ASU</span></div>
+                <div><span class="education-years">2019 — Present</span><h4>Arizona State University</h4><p>Ph.D. · Computer Science<br />Wearable AI, HCI, computer vision</p></div>
+              </article>
+              <article class="education-card">
+                <div class="education-logo"><img src="assets/logos/quantic.png" alt="Quantic School of Business and Technology logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="education-logo-fallback" hidden>Q</span></div>
+                <div><span class="education-years">2024</span><h4>Quantic School of Business and Technology</h4><p>Master of Business Administration<br />Zenith Award merit scholarship</p></div>
+              </article>
+              <article class="education-card">
+                <div class="education-logo"><img src="assets/logos/asu.png" alt="Arizona State University logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="education-logo-fallback" hidden>ASU</span></div>
+                <div><span class="education-years">2016 — 2018</span><h4>Arizona State University</h4><p>Master of Computer Science<br />Data science, NLP, robotics perception</p></div>
+              </article>
+              <article class="education-card">
+                <div class="education-logo"><img src="assets/logos/srm.png" alt="SRM University logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="education-logo-fallback" hidden>SRM</span></div>
+                <div><span class="education-years">2012 — 2016</span><h4>SRM University</h4><p>B.Tech · Computer Science and Engineering<br />Thesis on ML for stock-price prediction</p></div>
+              </article>
+            </div>
+          </div>
 
-          </footer>
-          <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
-          <script src="js/core/popper.min.js?ver=1.1.0"></script>
-          <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
-          <script src="js/now-ui-kit.js?ver=1.1.0"></script>
-          <script src="js/aos.js?ver=1.1.0"></script>
-          <script src="scripts/main.js?ver=1.1.0"></script>
-</body>
+          <div class="toolkit" aria-label="Toolkit">
+            <div class="toolkit-row"><span>AI / ML</span><div class="chips"><span>Claude on Bedrock</span><span>OpenAI API</span><span>RAG</span><span>LangChain</span><span>Transformers</span><span>PyTorch</span><span>TensorFlow</span><span>Vector DBs</span><span>MLflow</span><span>Weights &amp; Biases</span></div></div>
+            <div class="toolkit-row"><span>Backend</span><div class="chips"><span>Python</span><span>FastAPI</span><span>Flask</span><span>Next.js</span><span>SQL</span><span>REST APIs</span><span>n8n</span><span>LiveKit</span></div></div>
+            <div class="toolkit-row"><span>Cloud</span><div class="chips"><span>AWS Bedrock</span><span>Lambda</span><span>SageMaker</span><span>EC2 / S3</span><span>Terraform</span><span>Docker</span><span>Kubernetes</span><span>Azure OpenAI</span><span>GCP Vertex AI</span></div></div>
+          </div>
+        </div>
+      </section>
 
+      <section id="experience" class="section career-section">
+        <div class="wrap">
+          <span class="section-kicker">02 / Experience</span>
+          <h2 class="center-heading">From research lab<br /><em>to founding engineer.</em></h2>
+          <p class="center-copy">A path through neuromorphic chips, generative AI, wearable health research, and now an AI-first M&amp;A platform.</p>
+          <div class="career-list">
+            <article class="career-row current">
+              <div class="career-logo"><img src="assets/logos/dealprint.png" alt="DealPrint logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="logo-fallback" hidden>DP</span></div>
+              <div class="career-copy">
+                <span class="career-company">DealPrint <b>Current</b></span>
+                <h3>Founding AI and Software Engineer</h3>
+                <p>Agentic deal platform, document intelligence, and voice agents for M&amp;A</p>
+                <details class="career-more">
+                  <summary>Highlights</summary>
+                  <ul>
+                    <li>Shipped a document classifier for a 464-type due-diligence taxonomy: top-1 accuracy 0.27 → 0.79 with 95% fewer prompt tokens.</li>
+                    <li>Built the internal agentic customer-lifecycle platform (FastAPI, Next.js, Claude on Bedrock, Terraform) guiding buyers through 7 gated deal phases.</li>
+                    <li>Delivered 11 human-in-the-loop agents and 6 deal calculators on a unit-tested finance engine with IRR, SBA 7(a), and DSCR solvers.</li>
+                    <li>Built a LiveKit outbound voice agent with demo booking, voicemail detection, and scheduled retries.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="career-date"><span>Jun 2026</span><i>→</i><span>Present</span></div>
+            </article>
+
+            <article class="career-row">
+              <div class="career-logo"><img src="assets/logos/hijiband.png" alt="HijiBand logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="logo-fallback" hidden>MI</span></div>
+              <div class="career-copy">
+                <span class="career-company">Movement Interactive · HijiBand</span>
+                <h3>AI Researcher</h3>
+                <p>ML-based fall detection and post-fall analysis from wearable motion and physiological sensors</p>
+                <details class="career-more">
+                  <summary>Highlights</summary>
+                  <ul>
+                    <li>Developing an ML fall-detection system from wearable motion and physiological sensors to improve safety for older adults.</li>
+                    <li>Post-fall analysis that determines assistance needs by fusing real-time motion analysis with biometric monitoring.</li>
+                    <li>Adaptive algorithms that cut false positives and shorten response time while keeping detection accuracy high.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="career-date"><span>Jan 2025</span><i>→</i><span>Aug 2025</span></div>
+            </article>
+
+            <article class="career-row">
+              <div class="career-logo"><img src="assets/logos/boomi.png" alt="Boomi logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="logo-fallback" hidden>B</span></div>
+              <div class="career-copy">
+                <span class="career-company">Boomi</span>
+                <h3>Gen AI Engineering Intern</h3>
+                <p>RAG-powered documentation tools and Chainlit conversational experiences</p>
+                <details class="career-more">
+                  <summary>Highlights</summary>
+                  <ul>
+                    <li>Reduced manual documentation effort 10x and improved accuracy by 95% with prompt engineering, RAG, and dynamic prompt classification.</li>
+                    <li>Real-time conversational AI with Chainlit increased engagement 70% and cut support tickets 5%.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="career-date"><span>May 2024</span><i>→</i><span>Aug 2024</span></div>
+            </article>
+
+            <article class="career-row">
+              <div class="career-logo"><img src="assets/logos/brainchip.png" alt="BrainChip logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="logo-fallback" hidden>BC</span></div>
+              <div class="career-copy">
+                <span class="career-company">BrainChip · Zalmotek · Mercedes-Benz</span>
+                <h3>Machine Learning Intern</h3>
+                <p>Neuromorphic anomaly detection on AKD1000 and distracted-driving detection</p>
+                <details class="career-more">
+                  <summary>Highlights</summary>
+                  <ul>
+                    <li>Quantized multi-modal models on AKD1000 chips: 4x smaller, 500x energy savings, 4x faster inference.</li>
+                    <li>Sensor-integrated distracted-driving detection positioned for the Mercedes-Benz Vision EQXX concept.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="career-date"><span>Jun 2023</span><i>→</i><span>Aug 2023</span></div>
+            </article>
+
+            <article class="career-row">
+              <div class="career-logo"><img src="assets/logos/asu.png" alt="Arizona State University logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="logo-fallback" hidden>ASU</span></div>
+              <div class="career-copy">
+                <span class="career-company">Arizona State University · CUbiC Lab</span>
+                <h3>Doctoral Researcher &amp; Instructor</h3>
+                <p>PERACTIV wrist-centric AI; Co-PI on WearTech and Global Sport Institute grants; instructor for FSE 100</p>
+                <details class="career-more">
+                  <summary>Highlights</summary>
+                  <ul>
+                    <li>Lead developer of PERACTIV, a wrist-worn camera and ML system for human activity understanding, with 5 publications and a U.S. patent.</li>
+                    <li>Co-PI on the $20K WearTech grant (GPEC) and the $20K Global Sport Institute grant for wearable health and activity tools.</li>
+                    <li>Instructor for FSE 100 across four terms and TA for CSE 463 and CSE 110; taught 1,600+ students.</li>
+                    <li>Mentored 20+ capstone students across CUbiC, iLUX, and ANGLE labs on projects for FedEx, Pizza Hut, and Edgenuity.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="career-date"><span>2019</span><i>→</i><span>Present</span></div>
+            </article>
+
+            <article class="career-row">
+              <div class="career-logo"><img src="assets/logos/toyupgrade.png" alt="Toy Upgrade logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="logo-fallback" hidden>TU</span></div>
+              <div class="career-copy">
+                <span class="career-company">Toy Upgrade · ASU startup</span>
+                <h3>Head of Engineering</h3>
+                <p>Led a 5-person team on a speech-interactive educational toy; 300% engagement lift</p>
+                <details class="career-more">
+                  <summary>Highlights</summary>
+                  <ul>
+                    <li>Led a 5-member team building an educational toy with speech interaction, lifting user engagement 300%.</li>
+                    <li>Improved pronunciation-matching accuracy 20% with the SoapBox Labs API tuned to children's speech.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="career-date"><span>2018</span><i>→</i><span>2020</span></div>
+            </article>
+
+            <article class="career-row">
+              <div class="career-logo"><img src="assets/logos/heyludwig.png" alt="Heyludwig logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="logo-fallback" hidden>HL</span></div>
+              <div class="career-copy">
+                <span class="career-company">Heyludwig · Partners Dog Training</span>
+                <h3>Technical Lead</h3>
+                <p>Dialogflow chatbot that lifted client engagement 25% and cut response time 15%</p>
+                <details class="career-more">
+                  <summary>Highlights</summary>
+                  <ul>
+                    <li>Built and deployed a Dialogflow chatbot to streamline client interaction for a dog-training business.</li>
+                    <li>Drove a 25% increase in engagement and a 15% reduction in response time.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="career-date"><span>2018</span><i>→</i><span>2020</span></div>
+            </article>
+
+            <article class="career-row">
+              <div class="career-logo"><img src="assets/logos/ericsson.png" alt="Ericsson logo" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false" /><span class="logo-fallback" hidden>E</span></div>
+              <div class="career-copy">
+                <span class="career-company">Ericsson India</span>
+                <h3>R&amp;D Intern</h3>
+                <p>Churn prediction on call-detail records and multiclass classification of social streams with Apache Spark</p>
+                <details class="career-more">
+                  <summary>Highlights</summary>
+                  <ul>
+                    <li>Led a churn-prediction project on call-detail records with Apache Spark ML, reaching 64.8% accuracy.</li>
+                    <li>Built a multiclass classifier for Facebook stream analytics that categorized posts into service segments at 87.6% accuracy.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="career-date"><span>Jan 2016</span><i>→</i><span>Apr 2016</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <div class="wrap">
+          <span class="section-kicker">03 / Projects</span>
+          <h2 class="center-heading">Things I build<br /><em>when nobody asks.</em></h2>
+          <p class="center-copy">Independent systems in agents, trading automation, and applied ML.</p>
+          <div class="project-list">
+            <article class="project-panel project-featured">
+              <div class="project-copy">
+                <span class="project-index"><b>ORBIT</b></span>
+                <h3>Open research-driven backtesting intelligence</h3>
+                <p>An autonomous multi-agent system that turns natural-language trading hypotheses into structured experiments, generates strategies, runs institutional-grade backtests, and refines results through agent critique loops. Role-specialized agents coordinate over the Model Context Protocol with reproducible experiment lineage.</p>
+                <div class="project-tags"><span>Multi-agent</span><span>MCP</span><span>Quant research</span><span>Python</span></div>
+              </div>
+              <div class="project-mark"><span>Agents</span><strong>01</strong></div>
+            </article>
+            <div class="project-pair">
+              <article class="project-panel">
+                <span class="project-index"><b>AutoTrader Bot</b></span>
+                <h3>Automated stock trading platform</h3>
+                <p>End-to-end trading automation on n8n and the Charles Schwab API, fusing real-time market data with news sentiment for autonomous execution with stop-loss and profit-taking logic.</p>
+                <div class="project-tags"><span>n8n</span><span>Schwab API</span><span>Sentiment</span></div>
+              </article>
+              <article class="project-panel">
+                <span class="project-index"><b>AutoResumeGen</b></span>
+                <h3>Multi-agent resume generator</h3>
+                <p>CrewAI and GPT-4o agents (RoleParser, PersonaCalibrator, BulletRewriter, PDFExporter) that produce ATS-optimized resumes, with a critique agent and a mock-interview agent.</p>
+                <div class="project-tags"><span>CrewAI</span><span>LangChain</span><span>RAG</span></div>
+              </article>
+            </div>
+            <div class="project-grid">
+              <article class="mini-card"><span>Hackathon · 2021</span><h4>WizardEyes</h4><p>Real-time edge CV for smart cities on Luxonis OAK-D: occupancy, queue length, mask compliance, crowd density from one API.</p></article>
+              <article class="mini-card"><span>Open source · 2022</span><h4>Mayhem Heroes</h4><p>Ranked #2 globally for automating fuzz testing across 48 open-source repos and surfacing zero-day vulnerabilities.</p></article>
+              <article class="mini-card"><span>Robotics · 2019</span><h4>LIDAR object detection</h4><p>PointNet, PointNet++, and VoxelNet for 3D perception from LIDAR via ROS and Open3D.</p></article>
+              <article class="mini-card"><span>Applied ML · 2018</span><h4>Bacteria detection</h4><p>Transfer-learning classifier for NanoCheQ on SageMaker; 94.9% accuracy, +35% over baseline.</p></article>
+              <article class="mini-card"><span>Big data · 2017</span><h4>NYC taxi analytics</h4><p>Getis-Ord hot-spot analysis on 50 GB with Spark and Sedona, plus a D3 dashboard over 1B+ trips.</p></article>
+              <article class="mini-card"><span>Physics ML · 2017</span><h4>Higgs boson classification</h4><p>Neural-net and random-forest ensemble over 11M CERN records with Keras and scikit-learn.</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section research-section">
+        <div class="wrap">
+          <div class="two-column research-grid">
+            <div>
+              <span class="section-kicker">04 / Research</span>
+              <h2>Wearable AI for<br /><em>everyday health.</em></h2>
+              <p class="large-copy">PERACTIV is a wrist-worn camera and ML system that understands human activity through the hands. I lead its development at ASU's CUbiC Lab: privacy-aware training, automated annotation pipelines, and applications in medication adherence, activity tracking for seniors and athletes, and clinical monitoring dashboards.</p>
+              <div class="grant-list">
+                <div><span>WearTech · GPEC</span><strong>$20,000 · Co-PI</strong><p>Wrist-based video analytics for medication adherence in elderly individuals living alone.</p></div>
+                <div><span>Global Sport Institute · ASU</span><strong>$20,000 · Co-PI</strong><p>Wearable tools for tracking physical activity and remote training for seniors and athletes.</p></div>
+              </div>
+              <a class="button button-primary" href="https://scholar.google.com/citations?user=WQIuH_YAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar <span>↗</span></a>
+            </div>
+            <div class="pub-list">
+              <a class="pub" href="https://doi.org/10.1007/978-3-031-60884-1_18" target="_blank" rel="noreferrer"><span>HCII 2024</span><strong>Striking the Privacy-Model Training Balance: A Case Study using PERACTIV Device</strong><i>↗</i></a>
+              <div class="pub"><span>ICSM 2024</span><strong>Innovating Medication Adherence for Smart Cities: Leveraging PERACTIV and Automated Annotation Pipeline</strong></div>
+              <a class="pub patent" href="https://patents.google.com/patent/US12124629B2/en" target="_blank" rel="noreferrer"><span>U.S. Patent</span><strong>A Hand-Directed System for Identifying Activities</strong><i>↗</i></a>
+              <a class="pub" href="https://doi.org/10.1007/978-3-031-35897-5_41" target="_blank" rel="noreferrer"><span>HCII 2023</span><strong>Wrist View: Understanding Human Activity Through Hand</strong><i>↗</i></a>
+              <a class="pub" href="https://doi.org/10.1007/978-3-031-05431-0_18" target="_blank" rel="noreferrer"><span>HCII 2022</span><strong>PERACTIV: Personalized Activity Monitoring — Ask My Hands</strong><i>↗</i></a>
+              <a class="pub" href="https://www.allsubjectjournal.com/assets/archives/2015/vol2issue10/86.pdf" target="_blank" rel="noreferrer"><span>IJMRD 2015</span><strong>Machine Learning Algorithm Hypothesis on Smart Gyroscopic Tuned Dampers for Earthquake Resistance Building</strong><i>↗</i></a>
+            </div>
+          </div>
+
+          <div class="talks-block">
+            <div class="education-heading">
+              <span class="education-label">Invited talks</span>
+              <h3>Where I've presented PERACTIV</h3>
+            </div>
+            <div class="talks-grid">
+              <div><span>2026</span><strong>Nursing Asia-Pacific 2026</strong><p>Distinguished Speaker on deploying PERACTIV in nursing homes with centralized monitoring and ADL recognition.</p></div>
+              <div><span>2026</span><strong>IEEE EMBS Phoenix Chapter</strong><p>Invited seminar on wearable sensors, interpretable ML, and human-centered design for continuous patient monitoring.</p></div>
+              <div><span>Dec 2025</span><strong>IEEE New Era AI World Leaders Summit</strong><p>Wrist-centric multimodal AI for medication adherence, activity recognition, manufacturing, and robotics.</p></div>
+              <div><span>Nov 2020</span><strong>ASU New College B2C2 Workshop</strong><p>Invited instruction on AI, Python, and data analytics for high-school and undergraduate students.</p></div>
+            </div>
+          </div>
+
+          <div class="awards-grid" aria-label="Awards and honors">
+            <div><span>2025</span><strong>Graduate Mentorship Award</strong><p>Arizona State University</p></div>
+            <div><span>2023</span><strong>Graduate Teaching Excellence Award</strong><p>Arizona State University · FSE 100</p></div>
+            <div><span>2022</span><strong>#2 globally · Mayhem Heroes</strong><p>Fuzz testing across 48 open-source repos</p></div>
+            <div><span>2013 — 2015</span><strong>National coding &amp; CTF prizes</strong><p>SESCON-15, Denken Fest, eHack CTF</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="section service-section">
+        <div class="wrap judging-grid">
+          <div>
+            <span class="section-kicker">05 / Teaching &amp; service</span>
+            <h2>How I<br /><em>give back.</em></h2>
+            <p class="large-copy">I've taught more than 1,600 students at ASU as an instructor and teaching assistant, mentored capstone teams for FedEx, Pizza Hut, and CUbiC, and reviewed 172+ papers across HCI, computer vision, and multimedia. I'm available to judge hackathons, review, and speak on applied AI and wearable health.</p>
+            <a class="button button-primary" href="mailto:vkakarap@asu.edu?subject=Speaking%20or%20judging%20invitation">Invite me to speak or judge <span>↗</span></a>
+          </div>
+          <div class="rubric">
+            <div><span>01</span><div><strong>Teaching</strong><p>Instructor, FSE 100 Introduction to Engineering (4 terms). TA for CSE 463 HCI, CSE 110 Java, CSE 180. AI4ALL instructor.</p></div></div>
+            <div><span>02</span><div><strong>Editorial boards</strong><p>Clareus Scientific Science and Engineering · PriMera Scientific Engineering · IJAIKE readers committee.</p></div></div>
+            <div><span>03</span><div><strong>Co-chair</strong><p>ACM ETRA 2025 committee member and co-chair · ICSM 2025 special sessions co-chair.</p></div></div>
+            <div><span>04</span><div><strong>Program committees</strong><p>ACM CHI · HRI · ETRA · TOMM · OzCHI · ICWSM · IEEE PacificVis · HCII.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="wrap contact-grid">
+          <div>
+            <span class="section-kicker">06 / Say hello</span>
+            <h2>Let's build something<br /><em>worth deploying.</em></h2>
+            <div class="contact-portrait"><img src="assets/headshot.png" alt="Vishnu Kakaraparthi" /></div>
+            <span class="contact-name">Vishnu Kakaraparthi</span>
+            <div class="contact-tags"><span>Applied AI</span><span>Wearables &amp; HCI</span><span>Research</span></div>
+          </div>
+          <div class="contact-right">
+            <a class="email-link" href="mailto:vkakarap@asu.edu">vkakarap@asu.edu</a>
+            <p>For roles, collaborations, speaking, judging, or a conversation about production AI and wearable health.</p>
+            <a class="button button-light" href="mailto:vkakarap@asu.edu?subject=Hello%20Vishnu">Send a message <span>↗</span></a>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/prateekvishnu/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+              <a href="https://github.com/prateekvishnu" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="https://scholar.google.com/citations?user=WQIuH_YAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+              <a href="assets/Vishnu_Kakaraparthi_CV.pdf" target="_blank" rel="noreferrer">CV (PDF) ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrap"><span>© 2026 Vishnu Kakaraparthi</span><span>Built in Tempe, Arizona</span></footer>
+    <script src="script.js"></script>
+  </body>
 </html>
