@@ -71,8 +71,8 @@ if (sideNav) {
   update();
 }
 
-// More projects: staggered reveal when the grid scrolls into view.
-const moreCards = document.querySelectorAll('.more-card');
+// Projects: staggered reveal for every .reveal card as it scrolls into view.
+const moreCards = document.querySelectorAll('.reveal');
 if (moreCards.length) {
   if ('IntersectionObserver' in window) {
     const reveal = new IntersectionObserver((entries) => {

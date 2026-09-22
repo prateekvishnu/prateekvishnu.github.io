@@ -25,7 +25,7 @@
         } catch (e) {}
       })();
     </script>
-    <link rel="stylesheet" href="styles.css?v=fcca8ce7" />
+    <link rel="stylesheet" href="styles.css?v=fee73010" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -331,9 +331,9 @@
           <h2 class="center-heading">Things I build<br /><em>when nobody asks.</em></h2>
           <p class="center-copy">Independent systems in agents, autonomous trading, security, and applied ML, plus a decade of academic and applied builds.</p>
           <div class="project-list">
-            <article class="project-panel project-featured">
+            <article class="project-panel project-featured reveal" data-cat="agents" style="--i:1">
               <div class="project-copy">
-                <span class="project-index"><b>ORBIT</b></span>
+                <div class="panel-top"><span class="project-index"><b>ORBIT</b></span><span class="panel-cat">Agents · Quant</span></div>
                 <h3>Open research-driven backtesting and trading intelligence</h3>
                 <p>An autonomous multi-agent system that turns natural-language trading hypotheses into structured experiments, generates strategies, runs institutional-grade backtests, and refines results through agent critique loops. Role-specialized agents coordinate over the Model Context Protocol with reproducible experiment lineage. Its execution layer, built on n8n and the Charles Schwab API, fuses real-time market data and news sentiment to trade autonomously with stop-loss and profit-taking logic.</p>
                 <div class="project-tags"><span>Multi-agent</span><span>MCP</span><span>Quant research</span><span>n8n</span><span>Schwab API</span><span>Sentiment</span></div>
@@ -341,25 +341,25 @@
               <div class="project-mark"><span>Agents</span><strong>01</strong></div>
             </article>
             <div class="project-pair">
-              <article class="project-panel">
-                <span class="project-index"><b>AutoResumeGen</b></span>
+              <article class="project-panel reveal" data-cat="genai" style="--i:2">
+                <div class="panel-top"><span class="project-index"><b>AutoResumeGen</b></span><span class="panel-cat">Generative AI</span></div>
                 <h3>Multi-agent resume generator</h3>
                 <p>CrewAI and GPT-4o agents (RoleParser, PersonaCalibrator, BulletRewriter, PDFExporter) that produce ATS-optimized resumes, plus a critique agent and a mock-interview agent.</p>
                 <div class="project-tags"><span>CrewAI</span><span>LangChain</span><span>RAG</span></div>
               </article>
-              <article class="project-panel">
-                <span class="project-index"><b>Mayhem Heroes</b></span>
+              <article class="project-panel reveal" data-cat="security" style="--i:3">
+                <div class="panel-top"><span class="project-index"><b>Mayhem Heroes</b></span><span class="panel-cat">Security</span></div>
                 <h3>Automated fuzz testing at scale</h3>
                 <p>Ranked #2 globally in the Mayhem Heroes program for automating fuzz testing across 48 critical open-source repositories, surfacing zero-day vulnerabilities through containerized deployments and CI/CD pipelines.</p>
                 <div class="project-tags"><span>Fuzzing</span><span>CI/CD</span><span>Docker</span><span>Security</span></div>
               </article>
             </div>
             <div class="project-grid">
-              <article class="mini-card"><span>Hackathon · 2021</span><h4>WizardEyes</h4><p>Real-time edge computer vision for smart cities on Luxonis OAK-D: occupancy, queue length, mask compliance, and crowd density from one API.</p></article>
-              <article class="mini-card"><span>Applied ML · 2018</span><h4>Bacteria detection</h4><p>Production transfer-learning classifier for NanoCheQ on AWS SageMaker: 94.9% accuracy, 35% over baseline.</p></article>
-              <article class="mini-card"><span>Big data · 2017</span><h4>Spatial hot-spot analysis</h4><p>Getis-Ord hot-spot detection on 50 GB of NYC taxi data with Apache Spark and Sedona, with real-time visualization of high-activity zones.</p></article>
-              <article class="mini-card"><span>Robotics · 2019</span><h4>LIDAR object detection</h4><p>PointNet, PointNet++, and VoxelNet for 3D robotic perception from LIDAR data via ROS and Open3D.</p></article>
-              <article class="mini-card"><span>Physics ML · 2017</span><h4>Higgs boson classification</h4><p>Neural-network and random-forest ensemble over 11M CERN records with Keras and scikit-learn, reaching 71% accuracy.</p></article>
+              <article class="mini-card reveal" data-cat="vision" style="--i:1"><div class="more-top"><span class="more-cat">Computer vision</span><span class="more-date">Hackathon · 2021</span></div><h4>WizardEyes</h4><p>Real-time edge computer vision for smart cities on Luxonis OAK-D: occupancy, queue length, mask compliance, and crowd density from one API.</p></article>
+              <article class="mini-card reveal" data-cat="health" style="--i:2"><div class="more-top"><span class="more-cat">Health</span><span class="more-date">Applied ML · 2018</span></div><h4>Bacteria detection</h4><p>Production transfer-learning classifier for NanoCheQ on AWS SageMaker: 94.9% accuracy, 35% over baseline.</p></article>
+              <article class="mini-card reveal" data-cat="data" style="--i:3"><div class="more-top"><span class="more-cat">Data</span><span class="more-date">2017</span></div><h4>Spatial hot-spot analysis</h4><p>Getis-Ord hot-spot detection on 50 GB of NYC taxi data with Apache Spark and Sedona, with real-time visualization of high-activity zones.</p></article>
+              <article class="mini-card reveal" data-cat="robotics" style="--i:4"><div class="more-top"><span class="more-cat">Robotics</span><span class="more-date">2019</span></div><h4>LIDAR object detection</h4><p>PointNet, PointNet++, and VoxelNet for 3D robotic perception from LIDAR data via ROS and Open3D.</p></article>
+              <article class="mini-card reveal" data-cat="data" style="--i:5"><div class="more-top"><span class="more-cat">Data</span><span class="more-date">Physics · 2017</span></div><h4>Higgs boson classification</h4><p>Neural-network and random-forest ensemble over 11M CERN records with Keras and scikit-learn, reaching 71% accuracy.</p></article>
             </div>
 
             <div class="project-more">
@@ -368,70 +368,70 @@
                 <h3>Academic and applied builds, 2013 to 2022</h3>
               </div>
               <div class="more-grid">
-                <article class="more-card" data-cat="health" style="--i:1">
+                <article class="more-card reveal" data-cat="health" style="--i:1">
                   <span class="more-year" aria-hidden="true">2022</span>
                   <div class="more-top"><span class="more-cat">Health &amp; policy</span><span class="more-date">2022</span></div>
                   <h4>Dementia Framework</h4>
                   <p>Participatory design framework for dementia-care technology, integrating policy informatics across technology, law, architecture, markets, norms, and education.</p>
                   <div class="more-tags"><span>Participatory design</span><span>Policy informatics</span></div>
                 </article>
-                <article class="more-card" data-cat="health" style="--i:2">
+                <article class="more-card reveal" data-cat="health" style="--i:2">
                   <span class="more-year" aria-hidden="true">2021</span>
                   <div class="more-top"><span class="more-cat">Health</span><span class="more-date">2021</span></div>
                   <h4>Technological Tools for Dementia Care</h4>
                   <p>Analysis of assistive technologies for dementia patients with low-fidelity proposals such as environmental sensors for usability and location tracking.</p>
                   <div class="more-tags"><span>Assistive tech</span><span>Sensors</span><span>UX research</span></div>
                 </article>
-                <article class="more-card" data-cat="robotics" style="--i:3">
+                <article class="more-card reveal" data-cat="robotics" style="--i:3">
                   <span class="more-year" aria-hidden="true">2019</span>
                   <div class="more-top"><span class="more-cat">Robotics</span><span class="more-date">2019</span></div>
                   <h4>Vision-Based Manipulator Control with Fetch</h4>
                   <p>Visual servoing and depth estimation with ROS and OpenCV to guide a Fetch robot to partially occluded objects.</p>
                   <div class="more-tags"><span>ROS</span><span>OpenCV</span><span>Visual servoing</span></div>
                 </article>
-                <article class="more-card" data-cat="cloud" style="--i:4">
+                <article class="more-card reveal" data-cat="cloud" style="--i:4">
                   <span class="more-year" aria-hidden="true">2018</span>
                   <div class="more-top"><span class="more-cat">Cloud</span><span class="more-date">2018</span></div>
                   <h4>Auto-Scaling Image Recognition API</h4>
                   <p>Inception-V3 classification service on AWS EC2, S3, and SQS that scales compute dynamically for real-time inference.</p>
                   <div class="more-tags"><span>TensorFlow</span><span>Inception-V3</span><span>AWS EC2 · S3 · SQS</span></div>
                 </article>
-                <article class="more-card" data-cat="mobile" style="--i:5">
+                <article class="more-card reveal" data-cat="mobile" style="--i:5">
                   <span class="more-year" aria-hidden="true">2018</span>
                   <div class="more-top"><span class="more-cat">Mobile</span><span class="more-date">2018</span></div>
                   <h4>DropBy</h4>
                   <p>Sentiment-aware event crowdsourcing app in Java and Android on Google Cloud Platform with real-time messaging, auto-scaling, and media sharing.</p>
                   <div class="more-tags"><span>Java</span><span>Android</span><span>GCP</span></div>
                 </article>
-                <article class="more-card" data-cat="nlp" style="--i:6">
+                <article class="more-card reveal" data-cat="nlp" style="--i:6">
                   <span class="more-year" aria-hidden="true">2018</span>
                   <div class="more-top"><span class="more-cat">NLP</span><span class="more-date">2018</span></div>
                   <h4>Semantic Search on Movie Summaries</h4>
                   <p>Led a team of four on a CNN-based QA system with coreference resolution, sentence embeddings, and NER, reaching 54.7% accuracy.</p>
                   <div class="more-tags"><span>CNN</span><span>Coreference</span><span>NER</span></div>
                 </article>
-                <article class="more-card" data-cat="nlp" style="--i:7">
+                <article class="more-card reveal" data-cat="nlp" style="--i:7">
                   <span class="more-year" aria-hidden="true">2017</span>
                   <div class="more-top"><span class="more-cat">NLP</span><span class="more-date">2017</span></div>
                   <h4>Knowledge-Based Question Answering</h4>
                   <p>QA over DBpedia with Python, Stanford NLP, and SPARQL: semantic parsing, query formulation, and graph matching for firm-related questions.</p>
                   <div class="more-tags"><span>DBpedia</span><span>SPARQL</span><span>Stanford NLP</span></div>
                 </article>
-                <article class="more-card" data-cat="data" style="--i:8">
+                <article class="more-card reveal" data-cat="data" style="--i:8">
                   <span class="more-year" aria-hidden="true">2017</span>
                   <div class="more-top"><span class="more-cat">Data viz</span><span class="more-date">2017</span></div>
                   <h4>Maximizing NYC Taxi Revenue</h4>
                   <p>Interactive D3, Crossfilter, and dc.js dashboard over 1B+ trips with insights on fares, tips, locations, and passenger behavior.</p>
                   <div class="more-tags"><span>D3</span><span>Crossfilter</span><span>dc.js</span></div>
                 </article>
-                <article class="more-card" data-cat="web" style="--i:9">
+                <article class="more-card reveal" data-cat="web" style="--i:9">
                   <span class="more-year" aria-hidden="true">2013</span>
                   <div class="more-top"><span class="more-cat">Web</span><span class="more-date">2013 — 2015</span></div>
                   <h4>SRM PURA</h4>
                   <p>PHP and MySQL backend with multilingual front end enabling e-learning, e-governance, and IT access in underserved rural communities.</p>
                   <div class="more-tags"><span>PHP</span><span>MySQL</span><span>Multilingual</span></div>
                 </article>
-                <article class="more-card" data-cat="infra" style="--i:10">
+                <article class="more-card reveal" data-cat="infra" style="--i:10">
                   <span class="more-year" aria-hidden="true">2013</span>
                   <div class="more-top"><span class="more-cat">Infrastructure</span><span class="more-date">2013 — 2015</span></div>
                   <h4>SRM Search Engine</h4>
@@ -564,6 +564,6 @@
       </section>
     </main>
     <footer class="footer wrap"><span>© 2026 Vishnu Kakaraparthi</span></footer>
-    <script src="script.js?v=1abd40eb"></script>
+    <script src="script.js?v=66a576f8"></script>
   </body>
 </html>
